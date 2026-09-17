@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="Generator" content="iWeb 3.0.4" />
+    <meta name="iWeb-Build" content="local-build-20220705" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="viewport" content="width=1136" />
+    <title>PedPro Manual</title>
+    <link rel="stylesheet" type="text/css" media="screen,print" href="manual_files/manual.css" />
+    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='manual_files/manualIE.css'/><![endif]-->
+    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+    <style type="text/css">
+/*<![CDATA[*/
+	@import "Scripts/Widgets/HTMLRegion/Paste.css";
+/*]]>*/
+</style>
+    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
+    <script type="text/javascript" src="Scripts/Widgets/SharedResources/WidgetCommon.js"></script>
+    <script type="text/javascript" src="Scripts/Widgets/Navbar/navbar.js"></script>
+    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
+    <script type="text/javascript" src="Scripts/iWebMediaGrid.js"></script>
+    <script type="text/javascript" src="Scripts/Widgets/HTMLRegion/Paste.js"></script>
+    <script type="text/javascript" src="manual_files/manual.js"></script>
+  <!--head_code_set--><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177309885-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177309885-1');
+</script><!--/head_code_set--><meta name="description" content="PedPro is a program to handle pedigrees. It can check for errors, detect and break loops, remove uninformative individuals for linkage analysis, find obligatory carriers, identify clusters of individuals based on connections and affection status, identify and remove isolated individuals, merge connected families, and calculate individual weights to be used in a case-control association test. This program can also flexibly convert different pedigree files into Comprehensive Pedigree Format (CPF), a format designed to facilitate file sharing among laboratories and improve usability (i.e., directly analyzable) and re-usability (i.e., using an old pedigree file without modification even when we change the disease risk model or the gene of interest). As its name implies, this format contains necessary information for cosegregation analysis, risk prediction, and penetrance estimation, the main usages of a pedigree file in clinical genetic testing." /><meta name="robots" content="follow,index" /></head>
+  <body style="background: rgb(96, 96, 96); margin: 0pt; " onload="onPageLoad();" onunload="onPageUnload();">
+    <div style="text-align: center; ">
+      <div style="margin-bottom: 0px; margin-left: auto; margin-right: auto; margin-top: 0px; overflow: hidden; position: relative; word-wrap: break-word;  text-align: left; width: 1136px; " id="body_content">
+        <div style="background: transparent url(manual_files/pinstripe_bk_tile3-51.jpg) repeat scroll top left; width: 1136px; ">
+          <div style="margin-left: 0px; position: relative; width: 1136px; z-index: 0; " id="nav_layer">
+            <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+            <div style="height: 1px; line-height: 1px; " class="tinyText"> </div>
+            <div class="com-apple-iweb-widget-navbar flowDefining" id="widget0" style="margin-left: 54px; margin-top: 149px; opacity: 1.00; position: relative; width: 592px; z-index: 1; ">
+    
+              <div id="widget0-navbar" class="navbar">
+
+      
+                <div id="widget0-bg" class="navbar-bg">
+
+        
+                  <ul id="widget0-navbar-list" class="navbar-list">
+ <li></li> 
+</ul>
+                  
+      
+</div>
+                
+    
+</div>
+            </div>
+            <script type="text/javascript"><!--//--><![CDATA[//><!--
+new NavBar('widget0', 'Scripts/Widgets/Navbar', 'Scripts/Widgets/SharedResources', '.', {"path-to-root": "", "navbar-css": ".navbar {\n\tfont-family: Cochin, 'Times New Roman', serif;\n\tfont-size: .9em;\n\tcolor: #fff;\n\tmargin: 0px;\n\tfont-weight: bold;\n\tline-height: 26px;\n\ttext-transform: uppercase;\n}\n\n.navbar-bg {\n\ttext-align: left;\n}\n\n.navbar-bg ul {\n\tlist-style: none;\n\tmargin: 0px;\n\tpadding: 0px;\n}\n\n\nli {\n\tlist-style-type: none;\n\tdisplay: inline;\n\tpadding: 0px 35px 0px 0px;\n\tmargin: 0px;\n}\n\n\nli a {\n\ttext-decoration: none;\n\tpadding: 0px;\n\tmargin: 0px;\n\tcolor: #fff;\n\ttext-shadow: -1px 0px 1px #B3B7B4;\n}\n\nli a:visited {\n\ttext-decoration: none;\n\tpadding: 0px;\n\tmargin: 0px;\n\tcolor: #fff;\n\ttext-shadow: -1px 0px 1px #B3B7B4;\n}\n\nli a:hover\r{\r\n \tcolor: #666;\n\ttext-shadow: 0px 0px 0px\t;\r}\n\n\nli.current-page a\r{\r\t color: #333;\n\ttext-shadow: 0px 0px 0px;\r\r}\n", "current-page-GUID": "A943AE01-83F0-4714-A729-168A24362CE8", "isCollectionPage": "NO"});
+//--><!]]></script>
+            <div class="com-apple-iweb-widget-HTMLRegion" id="widget1" style="height: 135px; left: 50px; opacity: 1.00; position: absolute; top: 0px; width: 241px; z-index: 1; ">
+              <script type="text/javascript"><!--//--><![CDATA[//><!--
+    var widget1_htmlMarkupURL = ".//manual_files/widget1_markup.html";
+//--><!]]></script>
+              <div id="widget1-htmlRegion" class="html_region_widget"></div>
+            </div>
+            <script type="text/javascript"><!--//--><![CDATA[//><!--
+new Paste('widget1', 'Scripts/Widgets/HTMLRegion', 'Scripts/Widgets/SharedResources', '.', {"emptyLook": false});
+//--><!]]></script>
+            <div style="height: 50px; width: 50px;  height: 50px; left: 1031px; position: absolute; top: 11px; width: 50px; z-index: 1; " class="tinyText style_SkipStroke">
+              <a href="http://bjfenglab.org/" title="http://bjfenglab.org/"><img src="manual_files/house_3.png" alt="" style="border: none; height: 50px; width: 50px; " /></a>
+            </div>
+            <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
+          </div>
+          <div style="float: left; height: 0px; line-height: 0px; margin-left: 0px; position: relative; width: 1136px; z-index: 10; " id="header_layer">
+            <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+            <div style="height: 1px; width: 592px;  height: 1px; left: 54px; position: absolute; top: 0px; width: 592px; z-index: 1; " class="tinyText">
+              <div style="position: relative; width: 592px; ">
+                <img src="manual_files/shapeimage_1.jpg" alt="" style="height: 1px; left: 0px; position: absolute; top: 0px; width: 592px; " />
+              </div>
+            </div>
+            <div class="com-apple-iweb-widget-HTMLRegion" id="widget2" style="height: 1px; left: 860px; opacity: 1.00; position: absolute; top: -34px; width: 1px; z-index: 1; ">
+              <script type="text/javascript"><!--//--><![CDATA[//><!--
+    var widget2_htmlMarkupURL = ".//manual_files/widget2_markup.html";
+//--><!]]></script>
+              <div id="widget2-htmlRegion" class="html_region_widget"></div>
+            </div>
+            <script type="text/javascript"><!--//--><![CDATA[//><!--
+new Paste('widget2', 'Scripts/Widgets/HTMLRegion', 'Scripts/Widgets/SharedResources', '.', {"emptyLook": false});
+//--><!]]></script>
+          </div>
+          <div style="margin-left: 0px; position: relative; width: 1136px; z-index: 5; " id="body_layer">
+            <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+            <div id="id10" style="height: 6893px; left: 55px; position: absolute; top: 7px; width: 1044px; z-index: 1; " class="style_SkipStroke_1 shape-with-text">
+              <div class="text-content graphic_textbox_layout_style_default_External_1044_6893" style="padding: 0px; ">
+                <div class="graphic_textbox_layout_style_default">
+                  <p style="padding-top: 0pt; " class="paragraph_style"><br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <div class="paragraph paragraph_style_2">About<span style="line-height: 22px; " class="style"></span><div id="id1" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_1 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_3"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span style="line-height: 22px; " class="style"></span><br /></div>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">PedPro is a program to handle pedigrees. It can check for errors, detect and break loops, remove uninformative individuals for linkage analysis, find obligatory carriers, identify clusters of individuals based on relationship and affection status, identify and remove isolated individuals, merge connected families into one, and calculate individual weight to adjust for correlation between family members in an association test.<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <div class="paragraph paragraph_style_4"><span style="line-height: 44px; " class="style_2">Quick start</span><span style="line-height: 22px; " class="style"></span><div id="id2" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_1 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_3"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span style="line-height: 22px; " class="style"></span><span style="line-height: 44px; " class="style_2"><br /></span></div>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">Just upload a pedigree file without setting any options.<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <div class="paragraph paragraph_style_2">Pedigree File<span style="line-height: 22px; " class="style"></span><div id="id3" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_1 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_3"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span style="line-height: 22px; " class="style"></span><br /></div>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_5">Overview<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">A Pedigree File for PedPro is a tab- or space-delimited text file. Lines starting with # or after a blank line will be omitted. Each line corresponds to one person; each column is a variable. By default, columns are separated by a single tab. <br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_5">Column header<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">The first line is called the header line, from which PedPro identifies the contents of each column. PedPro tries to match only the first 7 characters of a header with the first 7 characters of a variable Symbol or one of the Synonyms in a case-insensitive fashion. Therefore, it is quite flexible in recognizing pre-defined variables. For example, the header of a &quot;father&quot; column could be Father, Fath, Fth, Dad, Fa, Pa, PaID; the &quot;Pedigree&quot; column could be named PedID, Pedigree, Family, PID, FID, PED, FAM, Kindred; &quot;Individual&quot; could be IndID, Individual, IID, IND, ID, Subject, Person; etc.<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">Below are the pre-defined variables:<br /></p>
+                  <p class="paragraph_style_6">======================================================================================================<br /></p>
+                  <p class="paragraph_style_6">Description               Type   ID     Symbol  Synonyms (7 characters or less, case-insensitive)<br /></p>
+                  <p class="paragraph_style_6">======================================================================================================<br /></p>
+                  <p class="paragraph_style_6">Pedigree_ID               STR    PID    PedID   pedid pid p_id ped family fid f_id fam kindred FamilyI<br /></p>
+                  <p class="paragraph_style_6">Individual_ID             STR    IID    IndID   indid iid i_id ind id subject PersonI IndivID<br /></p>
+                  <p class="paragraph_style_6">Unique_ID                 STR    UID    UniqID  uniqid uniq uid u_id<br /></p>
+                  <p class="paragraph_style_6">Father_ID                 STR    FTH    Father  father fath fth dad fa pa PaID FathID<br /></p>
+                  <p class="paragraph_style_6">Mother_ID                 STR    MTH    Mother  mother moth mth mom mo ma MaID MothID<br /></p>
+                  <p class="paragraph_style_6">Downcoded_PID             STR    DNP    dPID    dpid dp<br /></p>
+                  <p class="paragraph_style_6">Downcoded_IID             STR    DNI    dIID    diid di<br /></p>
+                  <p class="paragraph_style_6">Downcoded_UID             STR    DNU    dUID    duid du<br /></p>
+                  <p class="paragraph_style_6">Downcoded_FTH             STR    DNF    dFTH    dfth dfa ddad<br /></p>
+                  <p class="paragraph_style_6">Downcoded_MTH             STR    DNM    dMTH    dmth dmo dmom<br /></p>
+                  <p class="paragraph_style_6">Population                STR    POP    Pop     popu pop<br /></p>
+                  <p class="paragraph_style_6">Monozygosity_Twin         STR    MZT    MzTwin  mztwin mz_twin mz_t mztw mzt mz twin<br /></p>
+                  <p class="paragraph_style_6">Genotype                  STR    GTP    Geno    geno mutn gtp<br /></p>
+                  <p class="paragraph_style_6">Alternative_ID            STR    ALT    AltID   altid alti alt<br /></p>
+                  <p class="paragraph_style_6">Comment                   STR    CMT    Comment comment comm cmt<br /></p>
+                  <p class="paragraph_style_6">Details                   STR    DET    Details details det<br /></p>
+                  <p class="paragraph_style_6">Protected_Health_Info     STR    PHI    PHI     phi<br /></p>
+                  <p class="paragraph_style_6">Medical_Test_Reports      STR    MTR    MedRec  medrec<br /></p>
+                  <p class="paragraph_style_6">Genetic_Variants          STR    GVR    GVar    gvar<br /></p>
+                  <p class="paragraph_style_6">Sex                       DBL    SEX    Sex     gender gend sex sx sex_<br /></p>
+                  <p class="paragraph_style_6">Affection_Status          DBL    AFF    Aff     affe aff af <br /></p>
+                  <p class="paragraph_style_6">Liability                 DBL    LIA    Liab    liab lia li <br /></p>
+                  <p class="paragraph_style_6">Proband                   DBL    PRB    FPTP    fptp proband prob prb Tgt<br /></p>
+                  <p class="paragraph_style_6">Age                       DBL    AGE    Age     age ag<br /></p>
+                  <p class="paragraph_style_6">Year_Of_Birth             DBL    YOB    YoB     yob byr birth<br /></p>
+                  <p class="paragraph_style_6">Genotype_Numer            DBL    GTN    GTN     gtn<br /></p>
+                  <p class="paragraph_style_6">Genotype_Error            DBL    GTE    GTE     gte<br /></p>
+                  <p class="paragraph_style_6">Cluster_Number            DBL    CLT    Cluster cluster cl<br /></p>
+                  <p class="paragraph_style_6">Inbreeding_Coefficient    DBL    INB    Inbr    inbr<br /></p>
+                  <p class="paragraph_style_6">Generation_number         DBL    GEN    Gen     gen<br /></p>
+                  <p class="paragraph_style_6">Descendants_MaxNo.Gen     DBL    MXG    GDes    gdes<br /></p>
+                  <p class="paragraph_style_6">Descendants_TotalNo.      DBL    DES    NDes    ndes<br /></p>
+                  <p class="paragraph_style_6">Allele_1                  DBL    AL1    AL1     al1 a1 allele1<br /></p>
+                  <p class="paragraph_style_6">Allele_2                  DBL    AL2    AL2     al2 a2 allele2<br /></p>
+                  <p class="paragraph_style_6">Individual_Weight         DBL    IWT    IndWt   indwt weight wt<br /></p>
+                  <p class="paragraph_style_6">Death                     TRB    DTH    Death   death dead die vital_s<br /></p>
+                  <p class="paragraph_style_6">======================================================================================================<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">You can use the option --XXX=yyy to customize name of a pre-defined variable. Here XXX is the variable ID; yyy is the new variable name. For example, --AFF=BrCa tells the program to obtain affection status from the column &quot;BrCa&quot;, which stands for breast cancer. Be careful, this may mask an existing variable. For example, if you do &quot;--PID=Cluster --cl-out cl,id,fa,mo,sx,af --cl-aff&quot;, the first column in the output will not be the new Cluster_ID but Pedigree_ID.<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">Besides predefined columns, PedPro can read BOADICEA-type of columns which have the following features:<br /></p>
+                  <ol>
+                    <li style="line-height: 22px; padding-left: 34px; text-indent: -34px; " class="full-width" value="1">
+                      <p style="text-indent: -34px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">(1)</span><span style="width: 6px; " class="inline-block"></span>Header indicates disease name; non-missing content is age of diagnosis; missing means not affected.<br /></p>
+                    </li>
+                    <li style="line-height: 22px; padding-left: 34px; text-indent: -34px; " class="full-width" value="2">
+                      <p style="text-indent: -34px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">(2)</span><span style="width: 6px; " class="inline-block"></span>Disease features are in other columns.<br /></p>
+                    </li>
+                  </ol>
+                  <p class="paragraph_style_8">The  (--boadicea-var) option will setup the rules to read these columns. You may also need the (--cvt) option to convert content for some columns such as genotype, proband, and vital status. Please see the example below.<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_5">Column content<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">The option (--cvt) can flexibly convert column content to pre-defined codes. Argument of this option is the conversion instruction with the format of variable1symbol:text_1/text_2=value1,text_3/text_4=value2;variable2symbol:... For example, the default argument is sex:m/male/man/boy/46xy/47xyy/47xxy/48xxxy/49xxxxy=1,f/female/woman/girl/46xx/47xxx=2;aff:affected/aff/y/yes/a=2,unaffected/unaff/n/no/u=1. This means in the SEX column, m, male, man, boy, 46xy, 47xyy, 47xxy, 48xxxy, 49xxxxy will be converted to 1, while f, female, woman, girl, 46xx, 47xxx will be converted to 2. It should be noted that a=b,b=c is safe, which means the program will not convert &quot;a&quot; to &quot;c&quot; by changing &quot;a&quot; to &quot;b&quot; then &quot;b&quot; to &quot;c&quot;. This option will also affect output of column contents.<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">Codes for Monozygosity_Twins should be integers starting from 1. However, PedPro doesn't check whether the codes are successive and start from 1.<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">If your pedigree has a GTP column, optionally you can use the (--gvoi) option to populate the genotypes to the GVR column. Reversely, if your pedigree file has a GVR column, the genotypes will be populated to the GTP column. GVR can contain multiple variants. In this case, please use the (--gvoi) to choose which variant to population.<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">A Pedigree File should have at least three columns: Father_ID, Mother_ID, and either an Individual_ID (IID) or a Unique_ID (UID). IIDs are unique within each pedigree; while UIDs are unique in the whole file. If a Pedigree_ID (PID) column does not exist, the whole file is deemed a pedigree. If the IID column does not exist, IIDs will be the same as UIDs. If the UID column does not exist, a UID will be created as PID::IID. If a person's IID/UID is an empty string, PedPro will assign a name to the subject.<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_5">Lines<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">A pedigree file can have multiple lines for an individual, where subsequent input will replace the previous one. This may cause a problem if the previous line has parental IDs while the subsequent line does not. The option (-a) will let the program keep the parental connection. This option is useful for merging connected families into one pedigree.<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1"><span class="style_3"><br /></span></p>
+                  <p class="paragraph_style_9"><br /></p>
+                  <div class="paragraph paragraph_style_2">Error Checking<span style="line-height: 22px; " class="style"></span><div id="id4" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_1 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_3"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span style="line-height: 22px; " class="style"></span><br /></div>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">PedPro detects problems and tries to correct them. Potential problems are listed below. PedPro reports errors for '#'s, warnings for '&gt;'s, and none for '.'s. Solutions are listed in &quot;[]&quot;, if there're any.<br /></p>
+                  <p class="paragraph_style_1">   <br /></p>
+                  <p class="paragraph_style_1">   # Files missing Father_ID or Mother_ID or (IID or UID) [program stops]<br /></p>
+                  <p class="paragraph_style_1">   # Lines with PID problems (PID is empty or 0 or a period) [skip the line and continue]<br /></p>
+                  <p class="paragraph_style_1">   # Self-ancestors (A=&gt;..=&gt;A) [program stops]<br /></p>
+                  <p class="paragraph_style_1">   # Same-parents (mom and dad are the same person) [founderize offsprings]<br /></p>
+                  <p class="paragraph_style_1">   # Self-parent (one is oneself's father or mother) [founderize the persons]<br /></p>
+                  <p class="paragraph_style_1">   # Ambiguous-gender (being a father of one person, and mother of another) [program stops]<br /></p>
+                  <p class="paragraph_style_1">   # Impossible monozygosity twins (wrong code, different parent/sex, number of sibs !=2) [show error]<br /></p>
+                  <p class="paragraph_style_1">   # Wrong liability class (&lt;1) and wrong affection status (&lt;0) [show error]<br /></p>
+                  <p class="paragraph_style_1">   &gt; Improbable Year-of-birth (mother &lt;8 or &gt;70, fathers &lt;12 or &gt;90 years old) [show warning]<br /></p>
+                  <p class="paragraph_style_1">   &gt; Wrong number of probands in a family (!=1) [show warning]<br /></p>
+                  <p class="paragraph_style_1">   &gt; Re-input of the same individual [update fa,mo,sex,etc.]<br /></p>
+                  <p class="paragraph_style_1">   &gt; Re-input of the same family [merge family members]<br /></p>
+                  <p class="paragraph_style_1">   &gt; Potential mistyping of IIDs in wrong letter case<br /></p>
+                  <p class="paragraph_style_1">   &gt; Questionable IIDs (all IIDs never show up as Father_IDs or Mother_IDs)<br /></p>
+                  <p class="paragraph_style_1">   &gt; Multiple clusters of individuals within a family [show warning; remove separated individuals]<br /></p>
+                  <p class="paragraph_style_1">   &gt; Single parent [create a dummy spouse with an IID &lt;single-parent’s IID&gt;_01 for all offspring]<br /></p>
+                  <p class="paragraph_style_1">   &gt; Someone is a father but Sex is female, or is a mother but Sex is male [modify the Sex]<br /></p>
+                  <p class="paragraph_style_1">   . Lines for a parent is missing [add a line]<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">It's always a good practice to list all pedigree members together. If the lines for different pedigrees intermingle with each other, PedPro will report a warning &quot;Re-input family xxx&quot;. If intermingling is not expected, this may come from overlapping FIDs between recruitment institutes, and may lead to severe problems because these families are merged.<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <div class="paragraph paragraph_style_2">Functions<span style="line-height: 22px; " class="style"></span><div id="id5" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_1 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_3"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span style="line-height: 22px; " class="style"></span><br /></div>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_5">Detect multiple clusters and remove isolated individuals<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">Some data may have multiple unconnected families under the same Pedigree_ID. This may be a sign of problems. PedPro can detect it and show a warning. Each cluster is assigned a unique Cluster_ID. If the --wr argument has a Cluster field, the output file will contain and is sorted by the Cluster_ID, which can be treated as a new Pedigree_ID.<br /></p>
+                  <p class="paragraph_style_1">   <br /></p>
+                  <p class="paragraph_style_1">This feature can also be used to divide a big pedigree into sub-pedigrees, e.g., to identify high-risk sub-pedigrees for a disease, within which any two affected persons are connected by a sequence of affected 1-/2-/3-degree relatives. The corresponding command is &quot;--cl-out cl,id,pa,ma,sx --cl-aff&quot;. Different from the &quot;--wr cl,..&quot; option, this method may assign an individual to multiple clusters, and so he/she may be printed in multiple lines. Again, the output is sorted by Cluster_IDs.<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">Isolated individuals who are not connected to any other persons in the pedigree, a special case of multiple clusters, will be removed in the output.<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_5">Break loops<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">For simplicity, in this program a loop is a consanguinity loop, while a circle is a marriage loop. For example, a circle is formed if two brothers married two sisters separately. They are legal in the real world, but could cause difficulties for some software such as MelaPRO and SLINK. PedPro can look for circles between two nuclear families within up to three generations.<br /></p>
+                  <p class="paragraph_style_1">   <br /></p>
+                  <p class="paragraph_style_1">For example, suppose we have a family shown below. A circle is formed if one of these pairs of individuals married: 8-5 / 3-2 / 8-2 / 6-9. PedPro can detect all of them, but not beyond 10's grandparents. The option --br-circle can be used to break all circles by founderizing a minimum number of individuals per circle. These individuals are selected by the following criteria sequentially: minimum number of sibs; unaffected; minimum number of affected first-degree relatives. If more than 1 individual fulfills these criteria, then PedPro randomly selects one of them. This procedure is repeated until no circle remains. The option --br-loop uses a similar approach to break loops.<br /></p>
+                  <p class="paragraph_style_1">   <br /></p>
+                  <p class="paragraph_style_10">     1-+-2       3-+-4<br /></p>
+                  <p class="paragraph_style_10">       |           |<br /></p>
+                  <p class="paragraph_style_10">     +-+-+     +---+---+<br /></p>
+                  <p class="paragraph_style_10">     |   |     |   |   |<br /></p>
+                  <p class="paragraph_style_10">    f5  m6--+--7  m8  f9<br /></p>
+                  <p class="paragraph_style_10">            |<br /></p>
+                  <p class="paragraph_style_10">            10<br /></p>
+                  <p class="paragraph_style_1">   (Parent on the left is father unless otherwise specified: f=female, m=male.)<br /></p>
+                  <p class="paragraph_style_1">   <br /></p>
+                  <p class="paragraph_style_1">Beware, a small loop (avuncular marriage) may also appears to be a circle, for which this program will report a warning for both a loop and a circle.<br /></p>
+                  <p class="paragraph_style_1">   <br /></p>
+                  <p class="paragraph_style_5">Remove uninformative individuals <br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">The following persons are uninformative for linkage analysis: 1) unaffected ungenotyped founders with only 1 informative child; 2) unaffected ungenotyped individuals without any informative child. The --rm-uninf option can be used to remove them. Because this function may lead to separated individuals, --rm-sep is automatically activated along with --rm-uninf.<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_5">Calculate individual weight<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">The option (--ind-wt) will calculate individual weight for each genotyped individual to be used in an association test controlling for correlation among subjects. This option requires the Pedigree File to have the AFF and GTN column. Any non-zero integer in GTN means the person has genotype.  Use “wt” as an Additional Output Field to write the weight to the output pedigree file.<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_5">Cluster affected individuals<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">If the pedigree is too big (such as that with thousands of individuals in more than 10 generations), it may prohibit analysis by some program. It may be useful to separate the pedigree into parts, or clusters. The option (--cl-aff) will create these clusters based on relationship and affection status. The goal is to find clusters of affected individuals within N degree of relatives (--cl-dgr). <br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_5">Find obligatory carriers<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">The option (--oc) finds obligatory carriers from GTP and write ObligatoryCarrier=yes to Details. <br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_4"><br /></p>
+                  <div class="paragraph paragraph_style_2">List of all options<span style="line-height: 22px; " class="style"></span><div id="id6" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_1 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_3"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span style="line-height: 22px; " class="style"></span><br /></div>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_6">For reading Pedigree File:<br /></p>
+                  <p class="paragraph_style_6">  -d STR / -dSTR   Delimiters (multiple characters allowed; 1st character is also for output) {'\t'}<br /></p>
+                  <p class="paragraph_style_6">  -s [B]           Treat successive delimiters as one {No}<br /></p>
+                  <p class="paragraph_style_6"> --quoted=B        Allow quoted fields, quotation marks remain as content {No}<br /></p>
+                  <p class="paragraph_style_6"> --comment=S       Lines starting with S are comments {#}<br /></p>
+                  <p class="paragraph_style_6"> --skip-comment=B  Skip comment lines (omit and move on) {Yes}<br /></p>
+                  <p class="paragraph_style_6"> --keep-comment=B  Keep comment lines (show and move on) {No}<br /></p>
+                  <p class="paragraph_style_6"> --skip-blank=B    Skip blank lines {No}<br /></p>
+                  <p class="paragraph_style_6"> --read-blank=B    Read blank lines if not skipped, {No}<br /></p>
+                  <p class="paragraph_style_6"> --trim-lws=B      Skip leading whitespaces {No}<br /></p>
+                  <p class="paragraph_style_6"> --trim-tef=B      Skip trailing empty fields {No}<br /></p>
+                  <p class="paragraph_style_6"> --irg=B           Input is irregular: s=Y trim-lws=Y trim-tef=Y skip-blank=Y<br /></p>
+                  <p class="paragraph_style_6"> --csv=B           Input is CSV: -d , quoted=Yes s=No trim-lws=No trim-tef=No<br /></p>
+                  <p class="paragraph_style_6">  -Wno-single      Suppress warnings of single-parents (still show how to fix)<br /></p>
+                  <p class="paragraph_style_6">  -Wno-gender      Suppress warnings of wrong-genders that are corrigible<br /></p>
+                  <p class="paragraph_style_6">  -Wno-re-inp      Suppress warnings of re-input pedigrees or individuals<br /></p>
+                  <p class="paragraph_style_6">  -Wno-subped      Suppress warnings of 2+ disconnected pedigrees per PID<br /></p>
+                  <p class="paragraph_style_6">  -Wno-dupUID      Suppress warnings of Identical UIDs<br /></p>
+                  <p class="paragraph_style_6">  -w               Suppress all warnings<br /></p>
+                  <p class="paragraph_style_6"> --ma-age=I-I      Maternal age range for error detection, default is 8-70<br /></p>
+                  <p class="paragraph_style_6"> --pa-age=I-I      Paternal age range for error detection, default is 12-90<br /></p>
+                  <p class="paragraph_style_6"> --id-del=S        Set the delimiter between PID and IID for making UIDs. {::}<br /></p>
+                  <p class="paragraph_style_6"> --var-known Vs    Keep only Vs as pre-defined variables.<br /></p>
+                  <p class="paragraph_style_6">  -a               Read pedigree data aggregately.<br /></p>
+                  <p class="paragraph_style_6"> --XXX=yyyy        Convert variable names. <br /></p>
+                  <p class="paragraph_style_6"> --cvt S           Convert variable contents.<br /></p>
+                  <p class="paragraph_style_6"> --gvoi S          Genetic variant of interest is S (you don’t need this option if there is only one variant in GVar)<br /></p>
+                  <p class="paragraph_style_6"> --boadicea-var S  BOADICEA-type event columns<br /></p>
+                  <p class="paragraph_style_6"><br /></p>
+                  <p class="paragraph_style_6">For operations:<br /></p>
+                  <p class="paragraph_style_6"> --keep-unaff      Keep unaffected sibs in doing --rm-uninf (below)<br /></p>
+                  <p class="paragraph_style_6"> --rm-uninf        Remove uninformative individuals (requires AFF,GTN)<br /></p>
+                  <p class="paragraph_style_6"> --br-circle       Break circles by founderizing 1+ persons per circle<br /></p>
+                  <p class="paragraph_style_6"> --br-loop         Break loops by founderizing 1+ persons per loop<br /></p>
+                  <p class="paragraph_style_6"> --ind-wt          Generate individual weights for association test (requires AFF,GTN)<br /></p>
+                  <p class="paragraph_style_6"> --cl-dgr INT      Set degree of relatives for --cl-aff. Should be set before --cl-aff. {3}<br /></p>
+                  <p class="paragraph_style_6"> --cl-aff          Cluster individuals who are affected<br /></p>
+                  <p class="paragraph_style_6"> --oc              Find obligatory carriers and write ObligatoryCarrier=yes to Details<br /></p>
+                  <p class="paragraph_style_6"><br /></p>
+                  <p class="paragraph_style_6">For writing outputs:<br /></p>
+                  <p class="paragraph_style_6"> --wr-alt          Output alternative IDs<br /></p>
+                  <p class="paragraph_style_6"> --prepend-pid     Prepend PedID_ to each IndID, FatherID, MotherID<br /></p>
+                  <p class="paragraph_style_6"> --append-prb      Append a proband flag &quot;[P]&quot; at the end of an Individual ID<br /></p>
+                  <p class="paragraph_style_6"><br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <div class="paragraph paragraph_style_2">Comprehensive Pedigree Format<span style="line-height: 22px; " class="style"></span><div id="id7" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_1 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_3"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span style="line-height: 22px; " class="style"></span><br /></div>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">Cosegregation analysis, risk prediction, and penetrance estimation are potential usages of a pedigree file. Joint analysis of pedigrees from multiple institutes is important for increasing analysis power. To facilitate sharing and re-using pedigree files, I have created a format called <a class="class1" title="http://bjfenglab.org/CPF_v0.2.pdf" href="http://bjfenglab.org/CPF_v0.2.pdf">Comprehensive Pedigree Format (CPF)</a>. PedPro may help to convert your existing pedigree file to CPF. <br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">Cosegregation analysis requires pedigree structure, sex, affection status for relevant disease(s), age, population, birth year, genotype and the first person within each pedigree tested positive for the variant of interest, and monozygotic twin status. Here, age is the diagnosis age of the associated disease(s), diagnosis age of other diseases that compete with or increase the risk of the associated disease(s), age of risk-reducing treatments, or age of the last follow-up, whichever comes first. Pedigree structure refers to biological (blood) relationships only. Make sure your existing pedigree file contains the above information. It should contain all relevant diseases and all age of diagnoses data instead of an affection status and a combined age. This will significantly improve the re-usability of the file (i.e., you can directly analyze an old pedigree file without modification even when you change the disease risk model or the gene of interest). Favorably, the file should also contain environment risk factors, polygenic risk scores, genotypes of other high-penetrance genes, the type of genetic testing, disease subtype and disease characteristics. These information maybe useful for future analyses.<br /></p>
+                  <p class="paragraph_style_2"><br /></p>
+                  <div class="paragraph paragraph_style_2">Examples<span style="line-height: 22px; " class="style"></span><div id="id8" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_1 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_3"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span style="line-height: 22px; " class="style"></span><br /></div>
+                  <p class="paragraph_style_11"><br /></p>
+                  <p class="paragraph_style_5">Example 1: reading a BOADICEA-type Pedigree File<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">Below is an example file (do not copy and paste; the original BOADICEA file uses a tab to separate columns and a space to represent missing value; I have replaced the tab with spaces to make it look good on the web):<br /></p>
+                  <p class="paragraph_style_12">  Name   Tgt IndivID FathID MothID Sex Twin Status Age  Yob  1BrCa 2BrCa OvCa ProCa PanCa Gtest Mutn    Ashkn Er  Pr  Her2 Ck14 Ck56<br /></p>
+                  <p class="paragraph_style_12">1 Amanda T   1       2      3      F        dead   65   1920 30          45               srch  brca1&amp;2       +ve -ve -ve           <br /></p>
+                  <p class="paragraph_style_12">2 mom        3                     F        dead   unsp unsp                                                                        <br /></p>
+                  <p class="paragraph_style_12">3 dad        2                     M        alive  65   1892                                                                        <br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">Below is the option for reading this file:<br /></p>
+                  <p class="paragraph_style_1">--DTH=Status --boadicea-var event=BrCa:head=1BrCa:main=Dx:other=Er,Pr,Her2,Ck14,Ck56/event=OvCa:main=Dx/event=ProCa:main=Dx/event=PanCa:main=Dx --cvt Geno:brca1=Het,brca1&amp;2=Het;Death:dead=yes,alive=no;fptp:t=1 --gvoi BRCA1<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <div class="paragraph paragraph_style_2">Troubleshooting<span style="line-height: 22px; " class="style"></span><div id="id9" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_1 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_3"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span style="line-height: 22px; " class="style"></span><br /></div>
+                  <p class="paragraph_style_11"><br /></p>
+                  <p class="paragraph_style_1">PedPro log is at the end of the result page. You can search for “warning” or “error” to find potential problems.<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">In addition, you may want to check whether the program recognizes all columns you want the program to handle. This program allows unknown columns. Therefore, the program does not know whether it missed some columns you want it to read (hence no warning or error). To check whether this is the case, you can search for “recognized” in the result page. That line shows what columns have been recognized by the program.<br /></p>
+                  <p class="paragraph_style_1"><br /></p>
+                  <p class="paragraph_style_1">Second, check whether some lines are skipped, by searching “Skip lines” in the result page. Hopefully, no lines are skipped. A common mistake is, you put an empty string in a field, leading to two consecutive tabs. And you use the option “-s” which cause the program to read multiple consecutive tabs as one delimiter, hence skipping a column. Correspondingly, the “Skip lines lacking some fields” will not be zero.<br /></p>
+                </div>
+                <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
+              </div>
+            </div>
+            
+
+
+            <div id="id11" style="height: 128px; left: 403px; position: absolute; top: 17px; width: 347px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+              <div class="text-content graphic_textbox_layout_style_default_External_347_128" style="padding: 0px; ">
+                <div class="graphic_textbox_layout_style_default">
+                  <p style="padding-top: 0pt; " class="paragraph_style_13"><br /></p>
+                  <ol>
+                    <li style="line-height: 24px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_14"><span style="font-size: 18px; " class="Bullet">-</span><span style="width: 3px; " class="inline-block"></span><a class="class2" title="#id5" href="#id5">Error checking</a><br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_14"><span style="font-size: 18px; " class="Bullet">-</span><span style="width: 3px; " class="inline-block"></span><a class="class3" title="#id6" href="#id6">Functions</a><br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="padding-bottom: 0pt; text-indent: -11px; " class="paragraph_style_14"><span style="font-size: 18px; " class="Bullet">-</span><span style="width: 3px; " class="inline-block"></span><a class="class4" title="#id7" href="#id7">List of all options</a></p>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            
+
+
+            <div id="id12" style="height: 128px; left: 750px; position: absolute; top: 17px; width: 347px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+              <div class="text-content graphic_textbox_layout_style_default_External_347_128" style="padding: 0px; ">
+                <div class="graphic_textbox_layout_style_default">
+                  <p style="padding-top: 0pt; " class="paragraph_style_13"><br /></p>
+                  <p class="paragraph_style_15">- <a class="class5" title="#id8" href="#id8">CPF</a><br /></p>
+                  <p class="paragraph_style_15">- <a class="class6" title="#id9" href="#id9">Examples</a><br /></p>
+                  <p class="paragraph_style_15">- <a class="class7" title="#id10" href="#id10">Troubleshooting</a><br /></p>
+                </div>
+              </div>
+            </div>
+            
+
+
+            <div id="id13" style="height: 128px; left: 61px; position: absolute; top: 17px; width: 345px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+              <div class="text-content graphic_textbox_layout_style_default_External_345_128" style="padding: 0px; ">
+                <div class="graphic_textbox_layout_style_default">
+                  <p style="padding-top: 0pt; " class="paragraph_style_13">Contents<br /></p>
+                  <ol>
+                    <li style="line-height: 24px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_14"><span style="font-size: 18px; " class="Bullet">-</span><span style="width: 3px; " class="inline-block"></span><a class="class8" title="#id2" href="#id2">About</a><br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_14"><span style="font-size: 18px; " class="Bullet">-</span><span style="width: 3px; " class="inline-block"></span><a class="class9" title="#id3" href="#id3">Quick Start</a><br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_14"><span style="font-size: 18px; " class="Bullet">-</span><span style="width: 3px; " class="inline-block"></span><a class="class10" title="#id4" href="#id4">Pedigree File</a><br /></p>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div style="height: 6900px; line-height: 6900px; " class="spacer"> </div>
+          </div>
+          <div style="height: 20px; line-height: 0px; margin-left: 0px; position: relative; width: 1136px; z-index: 15; " id="footer_layer">
+            <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--code_set--></body>
+</html>
+
+
