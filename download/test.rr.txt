@@ -1,0 +1,32 @@
+# This is an example of a relative risk file.
+# Although the gene name is FOXP3_pathway, the relative risks were taken from BRCA1. 
+# Analysis of the example pedigree file (ped210.txt) should return a LOD score of 1.06567.
+
+--gene=FOXP3_pathway
+--dominant
+Geno	het	het	het	het	het	het
+Sex	Male	Male	Male	Female	Female	Female
+Disease	BrCa	OvCa	PanCa	BrCa	OvCa	PanCa
+0-29	8	1	4.68	73.7	1	4.68
+30-39	8	1	4.68	46.2	41.4	4.68
+40-49	8	1	4.68	17.2	56.7	4.68
+50-59	8	1	1.4	9.7	53.3	1.4
+60-64	8	1	1.4	7	69.1	1.4
+65-69	8	1	1.4	7	69.1	1.4
+70-79	8	1	1.4	4.8	11.8	1.4
+TableEnd
+
+--gene=another_gene
+--dominant
+Geno	het	het	het	het	het	het
+Sex	Male	Male	Male	Female	Female	Female
+Disease	BrCa	OvCa	PanCa	BrCa	OvCa	PanCa
+0-29	8	1	4.68	73.7	1	4.68
+30-39	8	1	4.68	46.2	41.4	4.68
+40-49	8	1	4.68	17.2	56.7	4.68
+50-59	8	1	1.4	9.7	53.3	1.4
+60-64	8	1	1.4	7	69.1	1.4
+65-69	8	1	1.4	7	69.1	1.4
+70-79	8	1	1.4	4.8	11.8	1.4
+TableEnd
+
