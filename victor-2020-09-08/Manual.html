@@ -1,0 +1,1106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="Generator" content="iWeb 3.0.4" />
+    <meta name="iWeb-Build" content="local-build-20220930" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="viewport" content="width=1136" />
+    <title>VICTOR - a tool for next-generation sequencing data analysis</title>
+    <link rel="stylesheet" type="text/css" media="screen,print" href="Manual_files/Manual.css" />
+    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Manual_files/ManualIE.css'/><![endif]-->
+    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+    <style type="text/css">
+/*<![CDATA[*/
+	@import "Scripts/Widgets/HTMLRegion/Paste.css";
+/*]]>*/
+</style>
+    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
+    <script type="text/javascript" src="Scripts/Widgets/SharedResources/WidgetCommon.js"></script>
+    <script type="text/javascript" src="Scripts/Widgets/Navbar/navbar.js"></script>
+    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
+    <script type="text/javascript" src="Scripts/iWebMediaGrid.js"></script>
+    <script type="text/javascript" src="Scripts/Widgets/HTMLRegion/Paste.js"></script>
+    <script type="text/javascript" src="Manual_files/Manual.js"></script>
+  <meta name="description" content="VICTOR is comprehensive software package for variant interpretation starting from a raw Variant Call Format (VCF) file. This package contains PERCH and other software written by Dr. Bing-jian Feng, data files for the genomes hg19, GRCh37, GRCh38, and several slurm script templates for running jobs in a computer cluster. The package has been tested on several large-scale whole-exome and whole-genome sequencing studies." /><meta name="robots" content="follow,index" /><!--head_code_set--><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177309885-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177309885-1');
+</script><!--/head_code_set--></head>
+  <body style="background: rgb(96, 96, 96); margin: 0pt; " onload="onPageLoad();" onunload="onPageUnload();">
+    <div style="text-align: center; ">
+      <div style="margin-bottom: 0px; margin-left: auto; margin-right: auto; margin-top: 0px; overflow: hidden; position: relative; word-wrap: break-word;  text-align: left; width: 1136px; " id="body_content">
+        <div style="background: transparent url(Manual_files/pinstripe_bk_tile3-51.jpg) repeat scroll top left; width: 1136px; ">
+          <div style="margin-left: 0px; position: relative; width: 1136px; z-index: 0; " id="nav_layer">
+            <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+            <div style="height: 1px; line-height: 1px; " class="tinyText"> </div>
+            <div class="com-apple-iweb-widget-navbar flowDefining" id="widget0" style="margin-left: 54px; margin-top: 22px; opacity: 1.00; position: relative; width: 891px; z-index: 1; ">
+    
+              <div id="widget0-navbar" class="navbar">
+
+      
+                <div id="widget0-bg" class="navbar-bg">
+
+        
+                  <ul id="widget0-navbar-list" class="navbar-list">
+ <li></li> 
+</ul>
+                  
+      
+</div>
+                
+    
+</div>
+            </div>
+            <script type="text/javascript"><!--//--><![CDATA[//><!--
+new NavBar('widget0', 'Scripts/Widgets/Navbar', 'Scripts/Widgets/SharedResources', '.', {"path-to-root": "", "navbar-css": ".navbar {\n\tfont-family: Cochin, 'Times New Roman', serif;\n\tfont-size: .9em;\n\tcolor: #fff;\n\tmargin: 0px;\n\tfont-weight: bold;\n\tline-height: 26px;\n\ttext-transform: uppercase;\n}\n\n.navbar-bg {\n\ttext-align: left;\n}\n\n.navbar-bg ul {\n\tlist-style: none;\n\tmargin: 0px;\n\tpadding: 0px;\n}\n\n\nli {\n\tlist-style-type: none;\n\tdisplay: inline;\n\tpadding: 0px 35px 0px 0px;\n\tmargin: 0px;\n}\n\n\nli a {\n\ttext-decoration: none;\n\tpadding: 0px;\n\tmargin: 0px;\n\tcolor: #fff;\n\ttext-shadow: -1px 0px 1px #B3B7B4;\n}\n\nli a:visited {\n\ttext-decoration: none;\n\tpadding: 0px;\n\tmargin: 0px;\n\tcolor: #fff;\n\ttext-shadow: -1px 0px 1px #B3B7B4;\n}\n\nli a:hover\r{\r\n \tcolor: #666;\n\ttext-shadow: 0px 0px 0px\t;\r}\n\n\nli.current-page a\r{\r\t color: #333;\n\ttext-shadow: 0px 0px 0px;\r\r}\n", "current-page-GUID": "E2979BED-669E-427B-9D8A-7E1B379FBC08", "isCollectionPage": "NO"});
+//--><!]]></script>
+            <div style="height: 50px; width: 50px;  height: 50px; left: 1031px; position: absolute; top: 11px; width: 50px; z-index: 1; " class="tinyText style_SkipStroke">
+              <a href="http://bjfenglab.org/" title="http://bjfenglab.org/"><img src="Manual_files/house_3.png" alt="" style="border: none; height: 50px; width: 50px; " /></a>
+            </div>
+            <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
+          </div>
+          <div style="float: left; height: 0px; line-height: 0px; margin-left: 0px; position: relative; width: 1136px; z-index: 10; " id="header_layer">
+            <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+            <div style="height: 1px; width: 592px;  height: 1px; left: 54px; position: absolute; top: 0px; width: 592px; z-index: 1; " class="tinyText">
+              <div style="position: relative; width: 592px; ">
+                <img src="Manual_files/shapeimage_1.jpg" alt="" style="height: 1px; left: 0px; position: absolute; top: 0px; width: 592px; " />
+              </div>
+            </div>
+          </div>
+          <div style="margin-left: 0px; position: relative; width: 1136px; z-index: 5; " id="body_layer">
+            <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+            <div id="id1" style="height: 280px; left: 55px; position: absolute; top: 3px; width: 150px; z-index: 1; " class="style_SkipStroke_1 shape-with-text">
+              <div class="text-content graphic_textbox_layout_style_default_External_150_280" style="padding: 0px; ">
+                <div class="graphic_textbox_layout_style_default">
+                  <p style="padding-top: 0pt; " class="paragraph_style">About<br /></p>
+                  <ol>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class1" title="#id2" href="#id2">VICTOR</a><br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 22px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_2"><span style="font-family: '.SFNSText', '.SF NS Text'; font-size: 16px; font-stretch: normal; font-style: normal; font-weight: 400; position: relative; top: 0px; " class="Bullet">‣</span><span style="width: 3px; " class="inline-block"></span>Functions<br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 22px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_2"><span style="font-family: '.SFNSText', '.SF NS Text'; font-size: 16px; font-stretch: normal; font-style: normal; font-weight: 400; position: relative; top: 0px; " class="Bullet">‣</span><span style="width: 3px; " class="inline-block"></span>Contents<br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 22px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_2"><span style="font-family: '.SFNSText', '.SF NS Text'; font-size: 16px; font-stretch: normal; font-style: normal; font-weight: 400; position: relative; top: 0px; " class="Bullet">‣</span><span style="width: 3px; " class="inline-block"></span>Features<br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 22px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_2"><span style="font-family: '.SFNSText', '.SF NS Text'; font-size: 16px; font-stretch: normal; font-style: normal; font-weight: 400; position: relative; top: 0px; " class="Bullet">‣</span><span style="width: 3px; " class="inline-block"></span>Versions<br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class2" title="#id3" href="#id3">Options</a><br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class3" title="#id4" href="#id4">Configure file</a><br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class4" title="#id5" href="#id5">Pipe</a><br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class5" title="#id6" href="#id6">Standard error</a><br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class6" title="#id7" href="#id7">Input files</a><br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class7" title="#id8" href="#id8">Genome</a><br /></p>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            
+
+
+            <div id="id27" style="height: 24275px; left: 53px; position: absolute; top: 297px; width: 1030px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+              <div class="text-content graphic_textbox_layout_style_default_External_1030_24275" style="padding: 0px; ">
+                <div class="graphic_textbox_layout_style_default">
+                  <p style="padding-top: 0pt; " class="paragraph_style_3">1. About<br /></p>
+                  <div class="paragraph paragraph_style_3">1.1. VICTOR<span class="style"></span><div id="id2" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_3"><br /></p>
+                  <p class="paragraph_style_5">VICTOR (<span class="style_2">V</span>ariant <span class="style_2">I</span>nterpretation for <span class="style_2">C</span>linical <span class="style_2">T</span>esting <span class="style_2">O</span>r <span class="style_2">R</span>esearch) is a command line pipeline for next-generation sequencing data analysis. It starts with a multi-sample raw VCF file that has not been decomposed, normalized, or annotated. It can be used for disease gene discovery research or clinical genetic testing. It is designed to be scalable to whole genome sequencing (WGS) on a large sample of individuals that is typical of a research on a complex disease. The downloadable package includes programs, script templates, and data files. It is mostly a self-contained package, whereby the requirement for third-party applications is minimal (see the INSTALL page for details), and all necessary databases are already included. It provides data updates regularly.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">This pipeline runs on Linux or Mac OS X. It supports parallel computing. <span class="style_3">The primary interface is a SLURM script template named slurm.all_steps.</span> SLURM is a job scheduler for Linux systems that is used by many of the world’s supercomputers and computer clusters. This script template can also be converted to work for other job schedulers such as PBS or MOAB. Alternatively, it can be used as a Bash script without a job scheduler. Using this template, users can modify parameters and input files specific to their research project. This script supports re-analysis from the middle of the pipeline if previous steps are successful. Users can select the analyses to be done, and then submit a job to the cluster again. The script will automatically write log files sequentially.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">This webpage describes the features common to all included programs and the usage of the utility tools. For the details of each program, please run the program with “-h” to show the user Manual.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_6">What VICTOR does:<br /></p>
+                  <ol>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="1">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">1.</span><span style="width: 6px; " class="inline-block"></span>Conducts genotype-, variant-, and sample-wise quality control. Please click <a class="class8" title="#id13" href="#id13">here</a> for a list of methods.<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="2">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">2.</span><span style="width: 6px; " class="inline-block"></span>Performs principle component analysis and automatically adjust for population structure in association tests.<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="3">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">3.</span><span style="width: 6px; " class="inline-block"></span>Calculates relatedness, remove correlated individuals, and detect pedigree errors.<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="4">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">4.</span><span style="width: 6px; " class="inline-block"></span>Annotates allele frequency, deleteriousness, functional consequence, and clinical significance of variants.<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="5">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">5.</span><span style="width: 6px; " class="inline-block"></span>For gene discovery research on a Mendelian disease, complex disease, or the disease that is hypothesized to be caused by <span class="style_4">de novo</span> mutations, performs variant prioritization, gene prioritization, and gene set analysis. It works for different study designs including case-control, case-only, extended pedigrees, trios, or mixed. Statistics include linkage analysis, linear or logistic or Cox regression, sum squared U, Fisher’s exact, rank sum, etc. It also supports analysis with a user-provided R script or external programs like EPACTS or SAIGE.<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="6">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">6.</span><span style="width: 6px; " class="inline-block"></span>For clinical testing, it calculates deleteriousness, cosegregation, and association. The output Bayes factor can be integrated with the multifactorial variant classification scheme following the IARC (International Agency for Research on Cancer) guidelines, or be converted to a strength category (supporting, moderate, strong, very strong) for integration with the ACMG/AMP (the American College of Medical Genetics and Genomics and the Association for Molecular Pathology) guidelines.<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="7">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">7.</span><span style="width: 6px; " class="inline-block"></span>It reports secondary findings for the return of results to study participants.<br /></p>
+                    </li>
+                  </ol>
+                  <p class="paragraph_style_8"><br /></p>
+                  <p class="paragraph_style_9">What are included in the package:<br /></p>
+                  <ol>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="8">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">8.</span><span style="width: 6px; " class="inline-block"></span>Programs<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="9">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">9.</span><span style="width: 6px; " class="inline-block"></span>Scripts and SLURM templates for submitting jobs to a computer cluster<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="10">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">10.</span>The reference sequence GRCh37 and GRCh38<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="11">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">11.</span>Genotypes of ancestry informative markers obtained from the 1000 Genomes Project<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="12">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">12.</span>Ensembl transcript database release 99 for GRCh38 and release 87 for GRCh37<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="13">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">13.</span>RefSeq transcript database 2019-10-20<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="14">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">14.</span>A light-weighted Ensembl database containing principle transcripts from APPRIS<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="15">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">15.</span> A light-weighted RefSeq database containing principle transcripts from APPRIS<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="16">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">16.</span> Database of discrepancies between RefSeq sequence and reference sequence<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="17">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">17.</span> MicroRNA binding sites predicted by Target Scan 7.1<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="18">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">18.</span> Regulatory region databases: Ensembl, RED, JEME, FOCS, PETModule<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="19">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">19.</span> Expression QTL database<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="20">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">20.</span> Protein QTL database<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="21">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">21.</span> The GeneMANIA gene network for guilt-by-association analysis<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="22">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">22.</span> Duplicated Gene Database<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="23">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">23.</span> PROVEAN scores for InDels observed in public databases<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="24">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">24.</span> The maximum allele frequencies obtained from UK10K, gnomAD, GoNL, and 4.7k Japanese<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="25">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">25.</span> Population specific allele frequencies obtained from gnomAD<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="26">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">26.</span> BayesDel scores for all possible SNVs in the entire human genome<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="27">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">27.</span> Maximum BayesDel scores among all possible SNVs for each gene<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="28">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">28.</span> BayesDel gene-specific cutoff optimized by ClinVar variants<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="29">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">29.</span> ClinVar variants, excluding those with conflicting reports<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="30">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">30.</span> Known risk alleles classified as Benign or Likely Benign in ClinVar<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="31">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">31.</span> Databases of mappability (DukeExcludable and DacExcludable)<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="32">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">32.</span> InterPro protein domain database<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="33">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">33.</span> Gene panel for reporting incidental findings, including ACMG recommendations<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="34">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">34.</span> Several gene set databases for gene set analysis: MsigDB, GO, HGNC.<br /></p>
+                    </li>
+                  </ol>
+                  <p class="paragraph_style_8"><br /></p>
+                  <p class="paragraph_style_9">Features:<br /></p>
+                  <ol>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="1">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">1.</span><span style="width: 6px; " class="inline-block"></span>Supports parallel computing.<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="2">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">2.</span><span style="width: 6px; " class="inline-block"></span>Supports re-analysis from the middle of the pipeline. It writes logs sequentially.<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="3">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">3.</span><span style="width: 6px; " class="inline-block"></span>Supports multiple genomes including GRCh37 and GRCh38.<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="4">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">4.</span><span style="width: 6px; " class="inline-block"></span>Automatically determines the VQSLOD cutoffs for SNVs and InDels separately.<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="5">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">5.</span><span style="width: 6px; " class="inline-block"></span>Automatically adjusts for population structure detected from a principle component analysis.<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="6">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">6.</span><span style="width: 6px; " class="inline-block"></span>Automatically removes correlated individuals that have higher missing rates.<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="7">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">7.</span><span style="width: 6px; " class="inline-block"></span>Provides regular database updates.<br /></p>
+                    </li>
+                  </ol>
+                  <p class="paragraph_style_8"><br /></p>
+                  <p class="paragraph_style_9">Version checking<br /></p>
+                  <p class="paragraph_style_5">The version string of this software package is a version number and a build date. If it is a beta version, the version number is followed by the word “beta”. All programs have the same version. Program version and data version are separate; sometimes you only need to upgrade the programs but not the data. The (--version) option of any program will check for new versions for both programs and data through the Internet. This option will not send out any information. <br /></p>
+                  <p class="paragraph_style_8"><br /></p>
+                  <div class="paragraph paragraph_style_3">1.2. Options<span class="style"></span><div id="id3" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_10"><br /></p>
+                  <p class="paragraph_style_5">In general, the usage of program options follows these rules:<br /></p>
+                  <ol>
+                    <li style="line-height: 24px; padding-left: 26px; text-indent: -26px; " class="full-width" value="1">
+                      <p style="text-indent: -26px; " class="paragraph_style_11"><span style="font-size: 18px; " class="Bullet">1)</span><span style="width: 6px; " class="inline-block"></span>Options with 2+ arguments must be used like this: “--option arg1 arg2”;<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 26px; text-indent: -26px; " class="full-width" value="2">
+                      <p style="text-indent: -26px; " class="paragraph_style_11"><span style="font-size: 18px; " class="Bullet">2)</span><span style="width: 6px; " class="inline-block"></span>Options with only 1 augment can be used like this: “--option=arg” or “--option arg”;<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 26px; text-indent: -26px; " class="full-width" value="3">
+                      <p style="text-indent: -26px; " class="paragraph_style_11"><span style="font-size: 18px; " class="Bullet">3)</span><span style="width: 6px; " class="inline-block"></span>You can omit a boolean argument that is positive, ie: “--option=yes” is equal to “--option”;<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 26px; text-indent: -26px; " class="full-width" value="4">
+                      <p style="text-indent: -26px; " class="paragraph_style_11"><span style="font-size: 18px; " class="Bullet">4)</span><span style="width: 6px; " class="inline-block"></span>It is better to always use “--option=arg” whenever possible, which is more readable;<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 26px; text-indent: -26px; " class="full-width" value="5">
+                      <p style="text-indent: -26px; " class="paragraph_style_11"><span style="font-size: 18px; " class="Bullet">5)</span><span style="width: 6px; " class="inline-block"></span>If the argument is an array, you can replace the default by “--array-option=v1,v2”;<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 26px; text-indent: -26px; " class="full-width" value="6">
+                      <p style="text-indent: -26px; " class="paragraph_style_11"><span style="font-size: 18px; " class="Bullet">6)</span><span style="width: 6px; " class="inline-block"></span>You can clear the default by assignment to an empty array “--array-option=”;<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 26px; text-indent: -26px; " class="full-width" value="7">
+                      <p style="text-indent: -26px; " class="paragraph_style_11"><span style="font-size: 18px; " class="Bullet">7)</span><span style="width: 6px; " class="inline-block"></span>You can insert or delete items by “--array-option+=v1,v2” or “--array-option-=v1,v2”, respectively;<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 26px; text-indent: -26px; " class="full-width" value="8">
+                      <p style="text-indent: -26px; " class="paragraph_style_11"><span style="font-size: 18px; " class="Bullet">8)</span><span style="width: 6px; " class="inline-block"></span>The order of different options does not matter. For example, “-a -b” is equivalent to “-b -a”;<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 26px; text-indent: -26px; " class="full-width" value="9">
+                      <p style="text-indent: -26px; " class="paragraph_style_11"><span style="font-size: 18px; " class="Bullet">9)</span><span style="width: 6px; " class="inline-block"></span>The order of the same option matters. The last one overrides the others. E.g., “-a=yes -a=no” is “-a=no”; <br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 26px; text-indent: -26px; " class="full-width" value="10">
+                      <p style="text-indent: -26px; " class="paragraph_style_11"><span style="font-size: 18px; " class="Bullet">10)</span> You cannot merge multiple single-letter options into one: “-a -b” cannot be written as “-ab”.<br /></p>
+                    </li>
+                  </ol>
+                  <p class="paragraph_style_10"><br /></p>
+                  <p class="paragraph_style_5">Be careful about array-type arguments: the correct way to assign two values is “--array-option=v1,v2” but not “--array-option=v1 --array-option=v2”. The latter will first assign v1 to the array, then assign v2 and get rid of v1, leaving only one element (v2) in the array.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">All escape sequences in program options and arguments will be replaced. The following sequences are recognized: \\ (backslash), \a (alert), \b (backspace), \f (form feed), \n (new line), \r (carriage return), \t (horizontal tab), \v (vertical tab), and \xHH (byte with 2-digits hexadecimal value).<br /></p>
+                  <p class="paragraph_style_8"><br /></p>
+                  <p class="paragraph_style_5">The (-h) or (--help) option will print a short help text for the program. In the help text, the description of each program option follows the convention of “ProgramOption ArgumentDataType Function {CurrentValue}”. Anything within a pair of square brackets is optional. Things within curly brackets are the current value after setting by factory defaults, configure files, and program options. To make the help text more readable, please set the terminal window size to at least 160 columns.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">ArgumentDataType is represented by a letter or a string as shown below:<br /></p>
+                  <ol>
+                    <li style="line-height: 24px; padding-left: 17px; text-indent: -16px; " class="full-width">
+                      <p style="text-indent: -16px; " class="paragraph_style_12"><span style="font-size: 18px; " class="Bullet"></span><span style="width: 16px; " class="inline-block"></span>D or DBL -- a floating point number<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 17px; text-indent: -16px; " class="full-width">
+                      <p style="text-indent: -16px; " class="paragraph_style_12"><span style="font-size: 18px; " class="Bullet"></span><span style="width: 16px; " class="inline-block"></span>I or INT -- an integer without commas for thousands (1234 but not 1,234)<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 17px; text-indent: -16px; " class="full-width">
+                      <p style="text-indent: -16px; " class="paragraph_style_12"><span style="font-size: 18px; " class="Bullet"></span><span style="width: 16px; " class="inline-block"></span>B or BOOL -- a case-insensitive boolean value (0/1/no/yes/n/y/false/true/f/t)<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 17px; text-indent: -16px; " class="full-width">
+                      <p style="text-indent: -16px; " class="paragraph_style_12"><span style="font-size: 18px; " class="Bullet"></span><span style="width: 16px; " class="inline-block"></span>C or CHAR -- a character<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 17px; text-indent: -16px; " class="full-width">
+                      <p style="text-indent: -16px; " class="paragraph_style_12"><span style="font-size: 18px; " class="Bullet"></span><span style="width: 16px; " class="inline-block"></span>S or STR -- a string, escape sequence allowed (e.g., &quot;hi\n&quot; = hi\\n = $'hi\n')<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 17px; text-indent: -16px; " class="full-width">
+                      <p style="text-indent: -16px; " class="paragraph_style_12"><span style="font-size: 18px; " class="Bullet"></span><span style="width: 16px; " class="inline-block"></span>F or FILE -- a filename, may include relative or absolute path, environment variables allowed<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 17px; text-indent: -16px; " class="full-width">
+                      <p style="text-indent: -16px; " class="paragraph_style_12"><span style="font-size: 18px; " class="Bullet"></span><span style="width: 16px; " class="inline-block"></span>P or PATH -- a path, relative or absolute, environment variables allowed, better ends with /<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 17px; text-indent: -16px; " class="full-width">
+                      <p style="text-indent: -16px; " class="paragraph_style_12"><span style="font-size: 18px; " class="Bullet"></span><span style="width: 16px; " class="inline-block"></span>FLD or FIELD -- a field number. The first field is 1, and so on. The last field is -1, second last is -2, and so on. <br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 17px; text-indent: -16px; " class="full-width">
+                      <p style="text-indent: -16px; " class="paragraph_style_12"><span style="font-size: 18px; " class="Bullet"></span><span style="width: 16px; " class="inline-block"></span>FLDs or FIELDs -- an array of field numbers divided by a comma<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 17px; text-indent: -16px; " class="full-width">
+                      <p style="text-indent: -16px; " class="paragraph_style_12"><span style="font-size: 18px; " class="Bullet"></span><span style="width: 16px; " class="inline-block"></span>Ss or STRs -- an array of strings separated by a comma<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 17px; text-indent: -16px; " class="full-width">
+                      <p style="text-indent: -16px; " class="paragraph_style_12"><span style="font-size: 18px; " class="Bullet"></span><span style="width: 16px; " class="inline-block"></span>Fs or FILEs -- an array of filenames separated by a colon<br /></p>
+                    </li>
+                  </ol>
+                  <p class="paragraph_style_8"><br /></p>
+                  <p class="paragraph_style_5">If specified, there may be a strict requirement for the format and the number of arguments. For example, “D,D,D” refers to exactly 3 floating point numbers separated by a comma, such as the --penetrance arguments. ArgumentDataType could be followed by an integer to help the writing of the descriptions, such as S1,S2,S3 for the --xct-pfx option, where S1 is ExAC file prefix, S2 is cases' qc.log file prefix, S3 is cases' coverage file prefix.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <div class="paragraph paragraph_style_3">1.3. Configure file<span class="style"></span><div id="id4" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_8"><br /></p>
+                  <p class="paragraph_style_8">A <span class="style_2">Configure File</span> is another way to pass parameters to programs besides program options. Although being optional, using a <span class="style_2">Configure File</span> is more convenient than program options. It is particularly useful for parameters that are the same for all programs and are unlikely to change over time. The programs read two <span class="style_2">Configure Files</span> if they exist. The first is /path/to/VICTOR/etc/par.txt, which can be used to set up parameters that are universal to all users. The second is ./par.txt, which should be used to specify parameters for the current analysis. The former overrides default values; the latter overrides the former; and command line options override all of them.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">In this file, one row is one option. The format is &quot;--option=argument&quot;. Space is not allowed in the arguments. Anything after the argument will be omitted. Multiple consecutive spaces or tabs are treated as one delimiter. Lines starting with a # are comments. Comments and blank lines will be omitted. The first row of the file has a special content (see the examples below), so that the programs will not accidentally read a wrong file.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">Not all program options can be set in a <span class="style_2">Configure File</span>. Below is a list of supported options:<br /></p>
+                  <p class="paragraph_style_13">--col-one Ss       Header of the first column {#CHROM,#Chrom,CHROM,Chrom,#CHR,#Chr,#chr,Chr,CHR,chr}<br /></p>
+                  <p class="paragraph_style_13">--fld-func S       Header of the field for functional consequence {Func_Type}<br /></p>
+                  <p class="paragraph_style_13">--fld-gene S       Header of the field for gene symbol {Func_Gene}<br /></p>
+                  <p class="paragraph_style_13">--fld-fdet S       Header of the field for functional details {Func_Detail}<br /></p>
+                  <p class="paragraph_style_13">--af Ss            Header of the fields for allele frequencies {}<br /></p>
+                  <p class="paragraph_style_13">--info-func S      The INFO sub-field for functional consequence annotation {vAnnGene}<br /></p>
+                  <p class="paragraph_style_13">--genome S         Genome assembly (GRCh37/GRCh38) {programs detect it automatically}<br /></p>
+                  <p class="paragraph_style_13">--gdb S            Gene database (refGeneLite/refGeneFull/ensGeneLite/ensGeneFull) {refGeneLite}<br /></p>
+                  <p class="paragraph_style_13">--gst-file F       Obtain gene-specific BayesDel cutoff from file F (BayesDel_GST or your own file) {}<br /></p>
+                  <p class="paragraph_style_13">--gst-col I1,I2    Obtain gene-specific BayesDel woAF,wiAF cutoff from columns I1,I2 (1-based) {2,3}<br /></p>
+                  <p class="paragraph_style_13">--filt-DP I        Exclude genotypes if DP&lt;I (0 = no filter) {10}<br /></p>
+                  <p class="paragraph_style_13">--filt-GQ I        Exclude genotypes if GQ&lt;I (0 = no filter) {40}<br /></p>
+                  <p class="paragraph_style_13">--filt-GP D        Exclude genotypes if GP&lt;D (0 = no_filter) {0.8}<br /></p>
+                  <p class="paragraph_style_13">--filt-domGP B     Exclude genotypes by GP with a dominant model {no}<br /></p>
+                  <p class="paragraph_style_13">--filt-recGP B     Exclude genotypes by GP with a recessive model {no}<br /></p>
+                  <p class="paragraph_style_13">--filt-minorVAF D  Exclude genotypes if minor allele's VAF&lt;D (0 = no filter) {0.2}<br /></p>
+                  <p class="paragraph_style_13">--filt-altVAF D    Exclude genotypes if ALT allele's VAF&lt;D (0 = no filter) {0}<br /></p>
+                  <p class="paragraph_style_13">--filt-vqs-nan B   Exclude variants if VQSLOD is missing {no}<br /></p>
+                  <p class="paragraph_style_13">--filt-vqs-snv D   Exclude variants if VQSLOD&lt;D (-inf = no filtering) for SNVs {-5.368}<br /></p>
+                  <p class="paragraph_style_13">--filt-vqs-indel D Exclude variants if VQSLOD&lt;D (-inf = no filtering) for InDels {-4.208}<br /></p>
+                  <p class="paragraph_style_13">--filt-miss-rate D Exclude variants if missing rate in cases or controls is &gt; D (1 = no filtering) {0.01}<br /></p>
+                  <p class="paragraph_style_13">--filt-filter Ss   Exclude variants if FILTER is not one of the Ss {.,PASS}<br /></p>
+                  <p class="paragraph_style_13">--filt-QD D        Exclude variants if QD (Qual. By Depth.) &lt; D (0 = no filtering, GATK default = 2)  {0}<br /></p>
+                  <p class="paragraph_style_13">--filt-MQ D        Exclude variants if MQ (Mapping Quality) &lt; D (0 = no filtering, GATK default = 40) {0}<br /></p>
+                  <p class="paragraph_style_13">--filt-FS D        Exclude variants if FS (Fisher Strand)   &gt; D (0 = no filtering, GATK default = 60) {0}<br /></p>
+                  <p class="paragraph_style_13">--filt-HS D        Exclude variants if HaplotypeScore       &gt; D (0 = no filtering, GATK default = 13) {0}<br /></p>
+                  <p class="paragraph_style_13">--filt-MR D        Exclude variants if MQRankSum            &lt; D (0 = no filtering, GATK default = -12.5) {0}<br /></p>
+                  <p class="paragraph_style_13">--filt-RP D        Exclude variants if ReadPosRankSum       &lt; D (0 = no filtering, GATK default = -8) {0}<br /></p>
+                  <p class="paragraph_style_13">--hard-filter B    Exclude variants by hard filters QD,MQ,FS,HS,MR,RP with GATK default thresholds {no}<br /></p>
+                  <p class="paragraph_style_13">--HardFiltIfNoVQ B Exclude variants by hard filters if there is no VQSLOD {yes}<br /></p>
+                  <p class="paragraph_style_13">--filt-MaxAF D     Exclude variants if MaxAF &gt; D (0 = no filter) {0.01}<br /></p>
+                  <p class="paragraph_style_13">--filt-SplAF D     Exclude variants if SplAF &gt; D (0 = no filter) {0}<br /></p>
+                  <p class="paragraph_style_13">--filt-FdrAF D     Exclude variants if FdrAF &gt; D (0 = no filter) {0.05}<br /></p>
+                  <p class="paragraph_style_13">--filt-del D       Exclude variants if BayesDel&lt;D (-inf = no filtering) {0.0692655 w/ MaxAF, -0.0570105 w/o}<br /></p>
+                  <p class="paragraph_style_13">--rm-nonfunc B     Exclude variants if non-functional (--filt-benign &amp; --filt-func) {no}<br /></p>
+                  <p class="paragraph_style_13">--filt-benign B    Exclude variants if classified as benign by --vks {yes}<br /></p>
+                  <p class="paragraph_style_13">--filt-func STRs   Exclude variants if function is STRs unless retained by --keep-if-del or --always-keep <br /></p>
+                  <p class="paragraph_style_13">                   {Intergenic,Intronic,Ancestral,Synonymous,UTR5,UTR3,Downstream,Upstream}<br /></p>
+                  <p class="paragraph_style_13">--keep-if-del STRs Keep the variant if function has STRs and BayesDel is high {ETG,REG}<br /></p>
+                  <p class="paragraph_style_13">--always-keep STRs Keep the variant if function has STRs {LoF,NMD,TrEff,SpliceAltH.NL,knClinSig=1,knRiskVar=1}<br /></p>
+                  <p class="paragraph_style_13">--no-miss B        Treat missing genotype as homozygous REF allele {no}<br /></p>
+                  <p class="paragraph_style_13">--prevalence D     Prevalence {0.025}<br /></p>
+                  <p class="paragraph_style_13">--penetrance D,D,D Penetrance {0.02,0.1,0.5}<br /></p>
+                  <p class="paragraph_style_13">--no-mhc B         Restrict analysis to non-MHC regions {no}<br /></p>
+                  <p class="paragraph_style_13">--mhc-only B       Restrict analysis to the MHC region {no}<br /></p>
+                  <p class="paragraph_style_13">--include Fs       Restrict analysis to regions     in FILEs. Use 2+ files to define intersection {}<br /></p>
+                  <p class="paragraph_style_13">--exclude Fs       Restrict analysis to regions not in FILEs. Use 2+ files to define union {}<br /></p>
+                  <p class="paragraph_style_13">--incl-genes Ss    Restrict analysis to genes     in Ss {}<br /></p>
+                  <p class="paragraph_style_13">--incl-gene-file F Restrict analysis to genes     in Fs {}<br /></p>
+                  <p class="paragraph_style_13">--excl-genes Ss    Restrict analysis to genes not in Ss {}<br /></p>
+                  <p class="paragraph_style_13">--excl-gene-file F Restrict analysis to genes not in Fs {}<br /></p>
+                  <p class="paragraph_style_13">--cds-only B       Restrict Analysis to protein sequence variants only {no}<br /></p>
+                  <p class="paragraph_style_13">--lof-only B       Restrict analysis to loss-of-function (LoF) variants only {no}<br /></p>
+                  <p class="paragraph_style_13">--lof-tol F        Analysis exclude LoF-tolerated genes in file F when --lof-only or --lof-no-del is yes {panel_LoFtol}<br /></p>
+                  <p class="paragraph_style_13">--lof-flag Ss      Variant is LoF if Func_Type has any one of the Ss {LoF,NMD}<br /></p>
+                  <p class="paragraph_style_13">--rm-ind Fs        Remove individuals listed in file(s) Fs {}<br /></p>
+                  <p class="paragraph_style_13">--flip-af B        Flip affection status {no}<br /></p>
+                  <p class="paragraph_style_13">--vc B             Run mode is Variant Classification {no}<br /></p>
+                  <p class="paragraph_style_13">--gnuplot S        The command for gnuplot 4.6.0 or later {gnuplot}<br /></p>
+                  <p class="paragraph_style_13">--no-web B         Do not check version from web {no}<br /></p>
+                  <p class="paragraph_style_13">--OUT S            Output prefix is S {&quot;&quot;}<br /></p>
+                  <p class="paragraph_style_13">--TMPDIR S         Temporary directory used by vQC vAAA vSEG. Better be a RAM disk {/tmp/}.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">Below is an example of the /path/to/VICTOR/etc/par.txt:<br /></p>
+                  <p class="paragraph_style_13">VICTOR_parameters_1.0                      &lt;&lt; Do not delete or modify. This line prevents reading a wrong file.<br /></p>
+                  <p class="paragraph_style_13">--gnuplot=/opt/gnuplot/4.6.0/bin/gnuplot   &lt;&lt; This is necessary if gnuplot 4.6.0 or above is not included in $PATH.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">Below is an example of the ./par.txt:<br /></p>
+                  <p class="paragraph_style_13">VICTOR_parameters_1.0     &lt;&lt; Do not delete or modify. This line prevents reading a wrong file.<br /></p>
+                  <p class="paragraph_style_13">--prevalence=0.025        &lt;&lt; prevalence<br /></p>
+                  <p class="paragraph_style_13">--penetrance=0.02,0.1,0.5 &lt;&lt; penetrance<br /></p>
+                  <p class="paragraph_style_8"><br /></p>
+                  <div class="paragraph paragraph_style_14">1.4. Pipe<span class="style"></span><div id="id5" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_8"><br /></p>
+                  <p class="paragraph_style_5">Most VICTOR programs read a data file from the standard input, do analyses, then write a modified data file to the standard output. Therefore, you can use the Unix pipe (“|”) to run multiple programs sequentially. This feature can help you reduce CPU usage time and save disk spaces. <br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <div class="paragraph paragraph_style_14">1.5. Standard error<span class="style"></span><div id="id6" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_8"><br /></p>
+                  <p class="paragraph_style_5">Analysis logs, messages, and runtime errors are normally written to the standard error (StdErr) output. However, the usage of Unix pipe and multi-processing parallelism (e.g., using GNU parallel to run multiple instances simultaneously, usually separated by chromosomes) will make the StdErr outputs between programs intermingle with each other. To solve this problem, please set an environment variable STDERR_MUTEX to a non-empty string. The provided SLURM script templates already implemented this feature. If you use the script template to run an analysis, you don’t have to set the variable separately.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">Messages written to the standard error output by VICTOR programs are one-liners, i.e., one message per line. Each line starts with a number, which is the process ID of the program. By this number, you can see to which program a message belongs. You can easily check for errors and warnings using the Linux command “grep”. To check for errors: grep -i 'error\|exception\|slurmstepd\|NODE_FAIL\|segmentation' &lt;your StdErr file&gt;<br /></p>
+                  <p class="paragraph_style_5">To check for warnings: grep -i 'warning' &lt;your StdErr file&gt;<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <div class="paragraph paragraph_style_14">1.6. Input files<span class="style"></span><div id="id7" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">Unless otherwise stated, input files for this software have columns divided by a space or a tab. Multiple successive delimiters are not treated as one. Lines starting with a ‘#’ are comments and will be ignored. The reading of input files is robust to Linux/Mac/Windows/mixed line breaks. It is also robust to the missing of a line break at the end of the last line. Programs will stop reading a file at the first blank line; therefore, you can write something useful to you in the file after a blank line. The input file does not need to be uncompressed if it is a .gz or .bz2 because the programs can read them directly. Both bgzip and gzip compressions are supported. You don’t even need to type “.gz” or “.bz2” in the command, as the programs will first look for the uncompressed file, then file.gz, followed by file.bz2. <br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_6">1.6.1 Sample File<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">A <span class="style_2">Sample File</span> contains ID, sex, outcome and covariates for all samples, including unrelated cases and controls for association tests, duplicated samples for quality control, individuals from pedigrees for linkage analysis or de novo mutation detection, and any other samples that have been sequenced and could be used for quality control. This file has a header row. The first column should be named “SeqID”, which contains the Sequence ID for each sequenced sample in a <span class="style_2">Genotype File</span>, i.e., the ID in a VCF header row. The second column is “Sex” with contents of Female or Male or UnknSex; other strings represent unknown sex. If you don’t know the sex of some samples, set them to unknown; <span class="style_3">do not set unknown sex as males or females because this will lead to wrong allele frequency calculation for chromosome X or Y</span>. The third column is the outcome variable, which can be an affection status (Unaffected or Affected or UnknAff; other strings are unknown affection status) or a quantitative trait (if there is any numbers not equal to 0/1/2). Quantitative trait values must be greater than 0. Sex and Affection Status are case-insensitive. <span class="style_5">Samples not to be used in a case-control association test </span>should have an unknown affection status. They are in this file just to provide the sex information. Columns starting from the fourth are optional. They are covariates for association tests and quality control. Missing values can be . or unknown. Covariates can be string-type or numeric-type but not mixed, i.e., a covariate cannot contain both numbers and non-missing strings. The name of a covariate cannot start with “victorPC” or “victorPop”, which are reserved by VICTOR to store the principle component analysis results. If you want to provide the population origin information instead of performing a PCA, you can add a string-type covariate with the header “Pop”. A <span class="style_2">Sample File</span> may contain more or fewer people than the <span class="style_2">Genotype File</span>. Only the overlapping samples will be analyzed. In an association test, samples with a missing value for the outcome or any covariate will be omitted. Lines in this file need not be sorted nor in the same order as the <span class="style_2">Genotype File</span>. Below is an example, where the columns are separated by multiple spaces for web display purpose only. In a real file they should be divided by one tab.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_15">SeqID   Sex     Disease    Pop<br /></p>
+                  <p class="paragraph_style_15">ped1_i1 Male    UnknAff    NFE<br /></p>
+                  <p class="paragraph_style_15">ped1_i2 Female  UnknAff    NFE<br /></p>
+                  <p class="paragraph_style_15">ped1_i3 Male    Affected   NFE<br /></p>
+                  <p class="paragraph_style_15">ped1_i4 Female  UnknAff    NFE<br /></p>
+                  <p class="paragraph_style_15">random  UnknSex UnknAff    SAS<br /></p>
+                  <p class="paragraph_style_15">HG00096 Male    Unaffected NFE<br /></p>
+                  <p class="paragraph_style_15">HG00097 Female  Unaffected NFE<br /></p>
+                  <p class="paragraph_style_15">HG00099 Female  Unaffected NFE<br /></p>
+                  <p class="paragraph_style_15">HG00100 Female  Unaffected NFE<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_6">1.6.2 Pedigree File<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">A <span class="style_2">Pedigree File</span> contains <span class="style_5">all pedigrees for linkage analysis by vSEG or de novo mutation analysis by vAAA. This file is similar to PLINK .fam, but is more robust, flexible, and informative. If you already have a PLINK .fam file you can directly use it as a </span><span class="style_6">Pedigree File</span><span class="style_5">. It has 6 columns corresponding to PedigreeID, IndividualID, FatherID, MotherID, Sex, and AffectionStatus. It has a header line as shown in the example below. Optionally, it can also have the 7th column for LiabilityClass. Pedigrees should not have any consanguinity loop or marriage loop. If your pedigree has loops, you can manually break the loops by founderizing a minimum number of individuals while maintaining the relationships among affected individuals as much as possible. My program “</span><a class="class9" title="http://www.bjfenglab.org/lab/lab/Software.html" href="http://www.bjfenglab.org/lab/lab/Software.html">pedpro</a><span class="style_5">” has the function to do so automatically. You can use that program to break the loops before analysis by vSEG. There is no other restriction on pedigree structure. For variant classification, </span><span class="style_6">Pedigree File</span><span class="style_5"> should indicate who is the proband in each pedigree, which can be done by adding the phrase “(proband)” at the end of the IndividualID. Beware that the word “proband” may means different concepts to different people -- to a genetic counselor it may be the first person requested for a genetic test, who may or may not be a carrier of the mutation; while to a statistician it is the first person in the pedigree who tested positive for the mutation. If you don’t know how to set a proband, then just leave it to the program; vSEG will automatically choose a proband in a conservative way. You can use the traditional coding of Sex (1 for male, 2 female, 0 for unknown) and AffectionStatus (1 for unaffected, 2 for affected, 0 for unknown) or use the same coding as in a </span><span class="style_6">Sample File</span><span class="style_5">. Liability Class is an integer starting from 1. The IndividualID should match with the header of the VCF file. </span>Below is an example. Here columns are separated by multiple spaces for web display purpose. In a real file they should be divided by exactly one tab.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_16">PedID IndID    Father   Mother   Sex     Aff<br /></p>
+                  <p class="paragraph_style_16">ped1  ped1_i1  0        0        1       2<br /></p>
+                  <p class="paragraph_style_16">ped1  ped1_i2  0        0        2       1<br /></p>
+                  <p class="paragraph_style_16">ped1  ped1_i3  ped1_i1  ped1_i2  1       2<br /></p>
+                  <p class="paragraph_style_16">ped1  ped1_i4  ped1_i1  ped1_i2  2       2<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">Sometimes it is inconvenient to manually create a pedigree file with <span class="style_5">IndividualIDs matching with the header of a VCF file. VICTOR provides a program named vConvertPed to help you create this file from another format. Please see the vConvertPed section below.<br /></span></p>
+                  <p class="paragraph_style_5"><span class="style_5"><br /></span></p>
+                  <p class="paragraph_style_6">1.6.3 Sample Weight File<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">A <span class="style_2">Sample Weight File</span> contains weights for each individual to be used in a regression analysis to control for relationship among pedigree members. This file has two columns: SeqID and Weight.<span class="style_5"><br /></span></p>
+                  <p class="paragraph_style_5"><span class="style_5"><br /></span></p>
+                  <p class="paragraph_style_6"><span class="style_5">1.6.4 Seed File<br /></span></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">A <span class="style_2">Seed File</span> lists the seed genes for guilt-by-association analysis by gnGBA. The first column of this file is a disease name and the second column gene symbols. Space is not allowed in the disease name or the gene symbol. Make sure that gene symbols are NCBI Official Symbols, not full names or synonyms or GeneIDs. This file does not have a header row. Below is an example:<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_16">Disease Gene1<br /></p>
+                  <p class="paragraph_style_16">Disease Gene2<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_6"><span class="style_5">1.6.5 GBA File<br /></span></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">A <span class="style_2">GBA File</span> contains guile-by-association (GBA) scores for each gene in the genome. GBA measures biological relevance of each gene to the disease of interesting by calculating relatedness with seed genes. This file has two columns: GeneSymbol and GBA_Score.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_6">1.6.6 Annotation File<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">An <span class="style_2">Annotation File</span> is a database file for variant annotation by vAnnDel. The information for annotation could be deleteriousness scores, dbSNP IDs, allele frequency, etc. Normally you don’t need to create this file because these information are already included in the VICTOR package. If you have allele frequency data specific to the study population, you can make an <span class="style_2">Annotation File</span> with allele frequency for annotation. The format of this file: <br /></p>
+                  <ol>
+                    <li style="line-height: 24px; padding-left: 26px; text-indent: -26px; " class="full-width" value="1">
+                      <p style="text-indent: -26px; " class="paragraph_style_17"><span style="font-size: 18px; " class="Bullet">1)</span><span style="width: 6px; " class="inline-block"></span>Lines starting with ## are comments; <br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 26px; text-indent: -26px; " class="full-width" value="2">
+                      <p style="text-indent: -26px; " class="paragraph_style_17"><span style="font-size: 18px; " class="Bullet">2)</span><span style="width: 6px; " class="inline-block"></span>The first row is the header row. Contents of this row will be used as headers in the output;<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 26px; text-indent: -26px; " class="full-width" value="3">
+                      <p style="text-indent: -26px; " class="paragraph_style_17"><span style="font-size: 18px; " class="Bullet">3)</span><span style="width: 6px; " class="inline-block"></span>The first 4 columns are #CHROM, POS, REF, and ALT;<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 26px; text-indent: -26px; " class="full-width" value="4">
+                      <p style="text-indent: -26px; " class="paragraph_style_17"><span style="font-size: 18px; " class="Bullet">4)</span><span style="width: 6px; " class="inline-block"></span>There is no limit to the number of columns;<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 26px; text-indent: -26px; " class="full-width" value="5">
+                      <p style="text-indent: -26px; " class="paragraph_style_17"><span style="font-size: 18px; " class="Bullet">5)</span><span style="width: 6px; " class="inline-block"></span>Variants with multiple alternative alleles are split into separate lines;<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 26px; text-indent: -26px; " class="full-width" value="6">
+                      <p style="text-indent: -26px; " class="paragraph_style_17"><span style="font-size: 18px; " class="Bullet">6)</span><span style="width: 6px; " class="inline-block"></span>Lines are sorted by #CHROM, POS, REF and ALT;<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 26px; text-indent: -26px; " class="full-width" value="7">
+                      <p style="text-indent: -26px; " class="paragraph_style_17"><span style="font-size: 18px; " class="Bullet">7)</span><span style="width: 6px; " class="inline-block"></span>The file is compressed by bgzip and indexed by tabix;<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 26px; text-indent: -26px; " class="full-width" value="8">
+                      <p style="text-indent: -26px; " class="paragraph_style_17"><span style="font-size: 18px; " class="Bullet">8)</span><span style="width: 6px; " class="inline-block"></span>Column header cannot be MaxAF, which is already reserved for internal usage by VICTOR.<br /></p>
+                    </li>
+                  </ol>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_6">1.6.6 Sequencing Platform File<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">If your samples were target-enriched by different reagents or sequenced by different platforms or with different depths, then you need to generate a <span class="style_2">Sequencing Platform File</span> and set SPF in slurm.all_steps. Here a cohort is a sample set that is target-enriched by the same reagent and sequenced by the same platform with the same depth. A <span class="style_2">Sequencing Platform File</span> has 2 columns, SeqID and CohortID, delimited by a tab. The CohortID should not contain white spaces. It can contains any number of alphanumeric or other characters. Samples with an unknown CohortID (empty or “.” or “unknown”) will be excluded from missing rate calculation. Below is an example. Here columns are separated by multiple spaces for web display purpose. In a real file they should be divided by one tab.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_15">SeqID   Cohort<br /></p>
+                  <p class="paragraph_style_15">ped1_i1 MyStudy<br /></p>
+                  <p class="paragraph_style_15">ped1_i2 MyStudy<br /></p>
+                  <p class="paragraph_style_15">ped1_i3 MyStudy<br /></p>
+                  <p class="paragraph_style_15">ped1_i4 MyStudy<br /></p>
+                  <p class="paragraph_style_15">HG00096 1000Genomes<br /></p>
+                  <p class="paragraph_style_15">HG00097 1000Genomes<br /></p>
+                  <p class="paragraph_style_15">HG00099 1000Genomes<br /></p>
+                  <p class="paragraph_style_15">HG00100 1000Genomes<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <div class="paragraph paragraph_style_14">1.7. Genome<span class="style"></span><div id="id8" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">VICTOR provides data files for hg19, GRCh37, hg38, and GRCh38. VICTOR programs detect genome by the following sequence: 1) VICTOR_GENOME environment variable; 2) full path of the current directory; and 3) --genome option either in the command line or in a par.txt. For the second method, the directory name does not be a genome name as a whole; it can be something like “assembly_GRCh37”. But it cannot contain multiple genome names, such as “GRCh38_liftover_from_GRCh37”.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">The slurm.annotate and slurm.all_steps scripts will detect genome from the input VCF file and then setup the VICTOR_GENOME environment variable for downstream analyses.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_3">2. Scripts<br /></p>
+                  <div class="paragraph paragraph_style_3">2.1 slurm.all_steps<span class="style"></span><div id="id9" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_3"><br /></p>
+                  <p class="paragraph_style_18">This is a SLURM script template for you to submit jobs to a computer cluster. SLURM scripts are basically Bash scripts with additional SLURM parameters, which are the lines starting with &quot;#SBATCH&quot;. You can easily convert a SLURM script to a PBS/MOAB script or a plain Bash script.<br /></p>
+                  <p class="paragraph_style_18"><br /></p>
+                  <p class="paragraph_style_18">This script will submit one job and perform parallel analyses on one computer node. It provides a mechanism to save log files sequentially when you execute this script multiple times. For this purpose, you need to use --array in submitting the job (e.g.: sbatch --array=1 slurm.all_steps). Below takes --array=2 as an example. When a job starts running, a file named &quot;slurm.all_steps.run_2.start&quot; will appear in the folder. When the job finishes successfully, another file named &quot;slurm.all_steps.run_2.stop&quot; will appear. Standard outputs and errors will be written to &quot;slurm.all_steps.run_2.stdout&quot; and &quot;slurm.all_steps.run_2.stderr&quot;, respectively. The script itself will be saved to slurm.all_steps.run_2.script. The local parameter file par.txt will be saved to slurm.all_steps.run_2.par. The version of VICTOR will be written to slurm.all_steps.run_2.version.<br /></p>
+                  <p class="paragraph_style_18"><br /></p>
+                  <p class="paragraph_style_18">This script<br /></p>
+                  <ol>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="1">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">1.</span><span style="width: 6px; " class="inline-block"></span>Conducts genotype-wise, variant-wise, and sample-wise quality control of data (see 4.1 below).<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="2">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">2.</span><span style="width: 6px; " class="inline-block"></span>Determines VQSLOD cutoffs for SNVs and InDels, separately.<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="3">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">3.</span><span style="width: 6px; " class="inline-block"></span>Performs principle component analysis and adjust for population structure in analyses.<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="4">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">4.</span><span style="width: 6px; " class="inline-block"></span>Calculate relatedness. Selects one sample from each related group by minimizing missing rate.<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="5">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">5.</span><span style="width: 6px; " class="inline-block"></span>Detect pedigree structure errors.<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="6">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">6.</span><span style="width: 6px; " class="inline-block"></span>Annotates functional consequence, allele frequencies, and the deleteriousness score BayesDel.<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="7">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">7.</span><span style="width: 6px; " class="inline-block"></span>Tests whether cases and controls are comparable by counting the number of rare variants per sample.<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="8">
+                      <p style="text-indent: -24px; " class="paragraph_style_7"><span style="font-size: 18px; " class="Bullet">8.</span><span style="width: 6px; " class="inline-block"></span>Performs statistical analysis, which may be a burden test, variance-based association test, linkage analysis, gene prioritization, variant prioritization, gene set analysis, or reporting incidental findings.<br /></p>
+                    </li>
+                  </ol>
+                  <p class="paragraph_style_3"><br /></p>
+                  <p class="paragraph_style_18">To use this script, prepare a tabix-indexed Variant Call Format (VCF) file, a Sample file, and optionally other input files. Modify parameters including VCF, OUT, SPL, MY_EMAIL, MY_ACCOUNT, and set the PATH. Then submit a job to a computer cluster. Below is the minimum setting. The “module load fenglab” command will set the PATH. Please modify that line according your system. Please read inside the script for addition usage instructions.<br /></p>
+                  <p class="paragraph_style_8"><br /></p>
+                  <p class="paragraph_style_19"># modify slurm.all_steps<br /></p>
+                  <p class="paragraph_style_19">cat /path/to/VICTOR/slurm.all_steps |\<br /></p>
+                  <p class="paragraph_style_19">sed &quot;s;VCF:-My.vcf.gz;VCF:-your.vcf.gz;&quot; |\<br /></p>
+                  <p class="paragraph_style_19">sed &quot;s;OUT:-MY_PREFIX;OUT:-VICTOR;&quot; |\<br /></p>
+                  <p class="paragraph_style_19">sed &quot;s;export SCRATCH_LOCAL= ;export SCRATCH_LOCAL=/scratch/local ;&quot; |\<br /></p>
+                  <p class="paragraph_style_19">sed &quot;s/MY_EMAIL/your_email_address/&quot; |\<br /></p>
+                  <p class="paragraph_style_19">sed &quot;s/MY_ACCOUNT/your_account/&quot; |\<br /></p>
+                  <p class="paragraph_style_19">sed &quot;s;export SPL=samples.txt;export SPL=your_Sample_File;&quot; |\<br /></p>
+                  <p class="paragraph_style_19">sed &quot;s/^#   module load fenglab/    module load fenglab/&quot; &gt; slurm.all_steps<br /></p>
+                  <p class="paragraph_style_19"><br /></p>
+                  <p class="paragraph_style_19"># submit a job to a computer cluster<br /></p>
+                  <p class="paragraph_style_19">victor.sbatch --array=1 slurm.all_steps<br /></p>
+                  <p class="paragraph_style_3"><br /></p>
+                  <div class="paragraph paragraph_style_3">2.2 slurm.annotate<span class="style"></span><div id="id10" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_18"><br /></p>
+                  <p class="paragraph_style_18">This script annotates variants for functional consequence, maximum allele frequency across populations, and a deleteriousness score BayesDel. To use this script, prepare a tabix-indexed Variant Call Format (VCF) file, then either:<br /></p>
+                  <p class="paragraph_style_18"><br /></p>
+                  <ol>
+                    <li style="line-height: 24px; padding-left: 34px; text-indent: -34px; " class="full-width" value="1">
+                      <p style="text-indent: -34px; " class="paragraph_style_20"><span style="font-size: 18px; " class="Bullet">(1)</span><span style="width: 6px; " class="inline-block"></span>submit a job to a computer cluster<br /></p>
+                    </li>
+                  </ol>
+                  <p class="paragraph_style_8"><br /></p>
+                  <p class="paragraph_style_8">Before submitting this script, modify parameters including VCF, OUT, MY_EMAIL, MY_ACCOUNT, and set PATH. Below is what I would do in my computer. The “module load fenglab” command will set the PATH. Please modify that line according to your system.<br /></p>
+                  <p class="paragraph_style_8"><br /></p>
+                  <p class="paragraph_style_19"># modify slurm.all_steps<br /></p>
+                  <p class="paragraph_style_19">cat /path/to/VICTOR/slurm.annotate |\<br /></p>
+                  <p class="paragraph_style_19">sed &quot;s;VCF:-My.vcf.gz;VCF:-your.vcf.gz;&quot; |\<br /></p>
+                  <p class="paragraph_style_19">sed &quot;s;OUT:-MY_PREFIX;OUT:-VICTOR;&quot; |\<br /></p>
+                  <p class="paragraph_style_19">sed &quot;s;export SCRATCH_LOCAL= ;export SCRATCH_LOCAL=/scratch/local ;&quot; |\<br /></p>
+                  <p class="paragraph_style_19">sed &quot;s/MY_EMAIL/your_email_address/&quot; |\<br /></p>
+                  <p class="paragraph_style_19">sed &quot;s/MY_ACCOUNT/your_account/&quot; |\<br /></p>
+                  <p class="paragraph_style_19">sed &quot;s/^#   module load fenglab/    module load fenglab/&quot; &gt; slurm.annotate<br /></p>
+                  <p class="paragraph_style_19"><br /></p>
+                  <p class="paragraph_style_19"># submit a job to a computer cluster<br /></p>
+                  <p class="paragraph_style_19">victor.sbatch --array=1 slurm.annotate<br /></p>
+                  <p class="paragraph_style_18"><br /></p>
+                  <ol>
+                    <li style="line-height: 24px; padding-left: 34px; text-indent: -34px; " class="full-width" value="2">
+                      <p style="text-indent: -34px; " class="paragraph_style_21"><span style="font-size: 18px; " class="Bullet">(2)</span><span style="width: 6px; " class="inline-block"></span>directly run the script<br /></p>
+                    </li>
+                  </ol>
+                  <p class="paragraph_style_22"><br /></p>
+                  <p class="paragraph_style_22">Now you don’t need to change MY_EMAIL and MY_ACCOUNT since they are used for job scheduler only. Below are the minimum commands for running an analysis, which involve setting the input VCF file and output prefix.<br /></p>
+                  <p class="paragraph_style_22"><br /></p>
+                  <p class="paragraph_style_23"># set PATH for VICTOR <br /></p>
+                  <p class="paragraph_style_23">module load fenglab<br /></p>
+                  <p class="paragraph_style_23"># run the slurm.annotate script<br /></p>
+                  <p class="paragraph_style_23">VCF=your.vcf.gz OUT=VICTOR /path/to/VICTOR/slurm.annotate \<br />  1&gt;slurm.annotate.run_1.stdout \<br />  2&gt;slurm.annotate.run_1.stderr<br /></p>
+                  <p class="paragraph_style_22"><br /></p>
+                  <p class="paragraph_style_18">If you need to change other parameters besides VCF and OUT, then <br /></p>
+                  <p class="paragraph_style_18"><br /></p>
+                  <p class="paragraph_style_19">cat /path/to/VICTOR/slurm.annotate |\<br /></p>
+                  <p class="paragraph_style_19">sed &quot;s;VCF:-My.vcf.gz;VCF:-your.vcf.gz;&quot; |\<br /></p>
+                  <p class="paragraph_style_19">sed &quot;s;OUT:-MY_PREFIX;OUT:-VICTOR;&quot; |\<br /></p>
+                  <p class="paragraph_style_19">sed &quot;s;export SCRATCH_LOCAL= ;export SCRATCH_LOCAL=/scratch/local ;&quot; |\<br /></p>
+                  <p class="paragraph_style_19">sed &quot;s/MY_EMAIL/your_email_address/&quot; |\<br /></p>
+                  <p class="paragraph_style_19">sed &quot;s/MY_ACCOUNT/your_account/&quot; |\<br /></p>
+                  <p class="paragraph_style_19">sed &quot;s/^#   module load fenglab/    module load fenglab/&quot; &gt; slurm.annotate<br /></p>
+                  <p class="paragraph_style_19"><br /></p>
+                  <p class="paragraph_style_19">chmod +x slurm.annotate<br /></p>
+                  <p class="paragraph_style_19"><br /></p>
+                  <p class="paragraph_style_23">./slurm.annotate \<br />  1&gt;slurm.annotate.run_1.stdout \<br />  2&gt;slurm.annotate.run_1.stderr<br /></p>
+                  <p class="paragraph_style_18"><br /></p>
+                  <p class="paragraph_style_5">The output archive is VICTOR.zip. Here, VICTOR is the output prefix defined by $OUT in the slurm.annotate. After unzip, the annotated file is VICTOR/VICTOR.ann.del.gz. Other files are logs. You can check the slurm.annotate.run_1.stderr for errors and warnings.  The annotated file VICTOR/VICTOR.ann.del.gz is sorted and indexed by gene. You can easily find variants by “tabix VICTOR/VICTOR.ann.del.gz &lt;GeneSymbol&gt;”. If you want to create an output file that is sorted and indexed by chromosomal coordinate, you can add “--sort-bp” to the VAG parameters of the slurm.annotate. <br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">Other useful parameters to consider:<br /></p>
+                  <p class="paragraph_style_5">If your VCF file is small, set USE_TABIX to yes. It will make the computation faster.<br /></p>
+                  <p class="paragraph_style_5">If you are interested in ACMG genes only, add “--prefer=panel_incidental” to VAG.<br /></p>
+                  <p class="paragraph_style_5">If you are interested in only a few genes, add “--genes” to VAG. E.g.: VAG=&quot;--genes=BRCA1,BRCA2&quot;.<br /></p>
+                  <p class="paragraph_style_5">If you are interested in cancer genes, set GBA=gbags.cancer.<br /></p>
+                  <p class="paragraph_style_5">If you don't want BayesDel to include MaxAF, set DEL=&quot;--add-af=no&quot;.<br /></p>
+                  <p class="paragraph_style_5">To make output sorted by #CHROM,POS like a VCF, add &quot;--sort-bp&quot; to VAG.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">The above procedures have been written to a script named “do.annotate.sh” in the “doc” folder. I would modify that file and use it for annotation.<br /></p>
+                  <p class="paragraph_style_18"><br /></p>
+                  <div class="paragraph paragraph_style_3">2.3 victor.sbatch<span class="style"></span><div id="id11" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_18"><br /></p>
+                  <p class="paragraph_style_18">This is a script to run the “sbatch” command to submit a job to a computer cluster. Instead of using sbatch, this script has the advantage of working in harmony with slurm.all_steps. Since slurm.all_steps hijacks the array number to make sequential logs if you run slurm.all_steps for multiple times, victor.sbatch makes sure that you do use the --array option and the array number has not been used before. It also has the advantage of saving the job ID to a file named slurm.all_steps.account, so that you can easily keep track of the job or cancel the job. victor.sbatch can also work for other slurm scripts.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <ol>
+                    <li style="line-height: 24px; padding-left: 25px; text-indent: -25px; " class="full-width" value="3">
+                      <p style="text-indent: -25px; " class="paragraph_style_24"><span style="font-size: 18px; " class="Bullet">3.</span><span style="width: 6px; " class="inline-block"></span>Utility tools<br /></p>
+                    </li>
+                  </ol>
+                  <p class="paragraph_style_5"><br /></p>
+                  <div class="paragraph paragraph_style_14">3.1. vConvertVCF<span class="style"></span><div id="id12" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_14"><br /></p>
+                  <p class="paragraph_style_5">vConvertVCF modifies VCF files to be read by KING or PLINK 1.9. If you provide multiple VCF files, they will be concatenated. You need to provide a Pedigree File (--ped) and/or a Sample File (--spl). Sequenced individuals not in these files will be dropped; individuals in these files but not in the VCF can be added (--add); VCF headers will be changed to &lt;FID&gt;&lt;delimiter&gt;&lt;IID&gt; for samples in the Pedigree File, or &lt;SeqID&gt;&lt;delimiter&gt;&lt;SeqID&gt; for those in the Sample File. The delimiter can be customized (--id-delim). If a sample is in both Pedigree File and Sample File, the former has the priority. It will also write a PLINK .fam file to replace the one created by PLINK (--fam). Please note that the order of individuals in this .fam file is not the same as that in the output VCF file. So to use this .fam file, you need to enable --indiv-sort for PLINK:<br /></p>
+                  <p class="paragraph_style_25"><br /></p>
+                  <p class="paragraph_style_26">plink_1.9 --vcf vConvertVCF.output.vcf --id-delim : --indiv-sort file vConvertVCF.output.fam --make-bed <br /></p>
+                  <p class="paragraph_style_26">mv vConvertVCF.output.fam plink.fam<br /></p>
+                  <p class="paragraph_style_14"><br /></p>
+                  <div class="paragraph paragraph_style_14">3.2. vConvertPed<span class="style"></span><div id="id13" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_14"><br /></p>
+                  <p class="paragraph_style_5">VICTOR and some other programs support a Pedigree File in PLINK or LINKAGE format, where the IndividualIDs should match with the headers of a VCF file. However, sometimes this format is not ideal. You may already have an old pedigree file with different IndividualIDs. You may also want to separate IndividualIDs from SequenceIDs, since they are different concepts. Sometimes you may have sequenced some individuals more than once. These would make the creation of a Pedigree File in PLINK format a bit more difficult. <br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">This program can create a Pedigree File from another format that is easier to make. The input is basically a PLINK format Pedigree File with an extra column of SequenceID that matches to the header row of a VCF file. For the individuals that are not sequenced, the SequenceID is 0. This file has a header row, where the SequenceID column should have the header name SeqID. Because of this extra column, the IndividualID does not need to match with the VCF header, nor does it need to be unique across pedigrees. <br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">This program reads two files, an input pedigree file with 7 columns (--ped) and a Genotype File in VCF (--geno). The reason to read a VCF is to find the sequenced individuals, so that it can translate the IndividualIDs for the sequenced individuals only.<br /></p>
+                  <p class="paragraph_style_14"><br /></p>
+                  <div class="paragraph paragraph_style_3">3.3. vSPLIT<span class="style"></span><div id="id14" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_3"><br /></p>
+                  <p class="paragraph_style_5">vSPLIT is a program to split multi-allelic variants into multiple lines. This is helpful for the downstream analysis, as each alternative allele may have a different deleteriousness score, population frequency, and functional consequence. <br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">In splitting alternative alleles, the program splits the genotypes too if the file contains any genotype columns. For example, if a sample’s genotype is 1/2 (i.e., alternative allele 1 and alternative allele 2), the person’s genotype will become 1/a and a/1, respectively. Here ‘a’ denotes “another alternative allele”, which can be changed by one of the options (-a). The program assumes that starting from the 10th column are genotypes, which conforms to the VCF format. If the last few columns are not genotypes, use the option (-l) to change the column number of the last sequenced individual. <br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">This program also reads the INFO field and splits certain variables. There are several modes of splitting: a) Direct Splitting (--ds), when the values correspond to each alternative allele in the same order as the “ALT” field; b) Plus Reference (--pr), when there is an extra value for the reference allele at the end; and c) Genotype Counts (--gc), which are the number of observations for all possible genotypes. Please use the (-h) option to see the names of the default variables that will be split in each mode. These default variables are designed to work for VCF files from the 1000 Genome Project, the NHLBI GO Exome Sequencing Project, the Exome Aggregation Consortium, and VCF files created by the Genome Analysis Toolkit. You can specify more variables than those actually exist in a VCF file. So you don’t have to change the variable names unless you have a variable that is not set by default.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">This program splits the AD field in each genotype column if the (--ad) option is set. This is necessary for variant allelic fraction (VAF) filtering. However, be cautious when using the AD field because it is not part of the standard VCF, and the usage of AD is not recommended by GATK: “Because the AD includes reads and bases that were filtered by the caller (and in case of indels, is based on a statistical computation), it should not be used to make assumptions about the genotype that it is associated with. Ultimately, the phred-scaled genotype likelihoods (PLs) are what determines the genotype calls.” <br /></p>
+                  <p class="paragraph_style_14"><br /></p>
+                  <div class="paragraph paragraph_style_3">3.4. vQC<span class="style"></span><div id="id15" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_3"><br /></p>
+                  <p class="paragraph_style_6">Input and Output<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">vQC performs genotype-, variant- and sample-wise quality control (QC). The input is a VCF file with or without genotype fields. If it has no genotypes (such as those in ExAC), it is required to specify the total number of samples in the sequencing (--tot-spl) and the INFO sub-field name for AC (--info-ac) and AN (--info-an). The output is a modified VCF file after removing low-quality genotypes and variants. The reason for the removal of each variant can be logged to a file (--log). Some samples will be excluded from the output if specified (--rm-ind). Uncommon intergenic or intronic variants may be excluded (--rm-ii-MaxAF-lt) to reduce the computation time of downstream analysis, such as phasing. To identify intergenic and intronic variants, the VCF input needs to have functional annotations in an INFO sub-field (--info-func). vQC can also filter variants by variation type (--snv-only, --indel-only), chromosomal region (--include, --exclude), chromosome type (--auto-chr). De <span class="style_4">novo mu</span>tations may be lost during a subsequent analysis, such as phasing by BEAGLE. vQC can solve this issue by exporting de <span class="style_4">novo mu</span>tations to a file before the analysis (--out-dn), then insert them back to the VCF afterward (--insert-dn).<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">The formats of <span class="style_2">Pedigree File</span> (--ped) and <span class="style_2">Sample File</span> (--spl) are described abbove. If the <span class="style_2">Sample File</span> contains population information (column 4, header &quot;pop&quot;, case-insensitive strings, missing value is an empty string or . or unknown), Hardy-Weinberg equilibrium (HWE) tests (--filt-hwe-pv) will be performed in unaffected samples within each population. Non-founder individuals from the <span class="style_2">Pedigree File</span> will be excluded automatically (--hwe-founder). If population is not defined, you have the option to choose whether to do HWE test in all independent controls (--hwe-controls).<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_6">Filters<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">Most options of this program are parameters for classical QC procedures, such as hard filtering (--hard-filter, --HardFiltIfNoVQ) or VQSLOD filtering (--filt-vqs-snv, --filt-vqs-indel), missing VQSLOD score (--filt-vqs-nan), Hardy-Weinberg equilibrium test (--filt-hwe-pv, --filt-hwe-info), FILTER field (--filt-filter), minor allele count (--filt-mac), total allele count (--filt-an), missing rate in cases or controls (--filt-miss-rate), missing rate discrepancy between cases and controls (--filt-miss-pv), genotype discordance among duplicated samples (--filt-discord), Mendelian errors excluding <span class="style_4">de novo</span> mutations (--filt-Mendelian), the same <span class="style_4">de novo</span> mutation in multiple individuals (--filt-de-novo), unoriginal <span class="style_4">de novo</span> mutations (--filt-uo-dn), the proportion of heterozygous haploidy among non-missing haploidy individuals (--filt-hh), the proportion of samples with sufficient coverage (--filt-cov-DP, --filt-cov-pc), and the mean depth if smaller or greater than a certain threshold (--filt-min-DP, --filt-max-DP). By default, homozygous <span class="style_4">de novo</span> mutations are treated as Mendelian errors but not a <span class="style_4">de novo</span> mutation. Please see the program help text for the options for each of the above filters.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">In addition, vQC implements a unique QC method using allele frequency. If you are searching for low-frequency variants, and you expect a low founder effect and high locus and/or allelic heterogeneity, you may want to exclude common variants from subsequent analysis. This filtering may be an efficient QC too because some sequencing artifacts may be “observed” in almost every sequenced samples. Similar to this idea, vQC removes variants that are supposed to be rare but are too common in the data. It takes ancestry-specific allele frequency from gnomAD, calculates a one-sided p-value for observing the data for each ancestry and sequencing platform, and then removes the variants if the p-value is smaller than a user-defined threshold (--filt-obs-pv). For this QC to work, the Sample File must contain the Population column and the program options must specify cohort separated by sequencing platform (--cohort). Users can also specify a relative risk to accommodate the potential enrichment of the variants in cases (--filt-obs-rr). As you may see, this method is rather conservative because variants were filtered based on p-value instead of the observed frequency. So this method is robust to founder mutations. This QC method may be valid even if the samples are enriched for a certain phenotype that is distinct from the disease of interest, e.g., a study that uses an admixture of diseases as controls. A variant that is too common in those samples may be: 1) an artifact; 2) a common variant specific to the studied population; 3) a causal variant for the enriched phenotype; or 4) a protective variant for the disease of interest. For most studies the last situation is very unlikely and hence it is safe to remove these variants. Nevertheless, use it with caution. <br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">The missing rate filtering can be done in cases and controls separately (--filt-miss-ea=yes) or jointly (--filt-miss-ea=no). However, sometimes it makes more sense to do it by cohort. Here a cohort means a sample set that is exome-captured by the same reagent and sequenced by the same platform with the same depth. Also, if you have sequenced pedigrees, some pedigree members may be indicated with an unknown affection status in the sample file (because they are not index cases), who will not be included in the missing rate calculation if (--filt-miss-ea=yes). In this case, you can create a <span class="style_2">Sequencing Platform File</span> and use the (--cohort) option, then the program will do the missing rate filtering by cohort only, disregarding case/control status or pedigrees.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_6">Duplications and Replications<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">To perform quality control by genotype concordance among duplicated samples, vQC reads a <span class="style_7">Duplication File </span>(--dup). This file does not have a header row. Each row are the different SeqIDs for one biological sample. The number of columns in each row may vary, but there should be at least two columns as these are duplications. The vQC will compare column 2 with column 1, column 3 with column 1, and so on. Therefore, it is better to put the “gold standard” in column 1, and each experiment in a specific column consistently for all lines. Missing SeqID should be “0” or “.” or empty. The first column should not be missing. At least one SeqID per line in this file should also be in the <span class="style_2">Sample File</span> too, because vQC needs to obtain sex information from the <span class="style_2">Sample File</span>. Below is an example of this file. Suppose you have performed four experiments: Sanger sequencing, exome array, and next-generation sequencing by two platforms, then the <span class="style_2">Duplication File</span> may looks like this:<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_27">#Sanger Array NGS1  NGS2<br /></p>
+                  <p class="paragraph_style_27">S1S        S1A   S1N1  S1N2<br /></p>
+                  <p class="paragraph_style_27">S2S        0       S2N1  S2N2<br /></p>
+                  <p class="paragraph_style_27">S3S        S3A   0        S3N2<br /></p>
+                  <p class="paragraph_style_5">...<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">Besides duplications (a sample went through the same experiment twice), vQC can also perform quality control by genotype concordance among replications (a sample went through another experiment to validate the sequencing results, such as high-throughput SNP array genotyping or targeted sequencing). Variants in an array most likely have a common or low allele frequency, so it is not very helpful for the QC of rare variants discovered from sequencing. But it can still be used to estimate the concordance rate and find out a good threshold for GQ and DP. To do this, vQC reads two files (--rep). The first one is a <span class="style_7">Replication ID File</span>, which translates IDs between the two experiments. The second one is a <span class="style_7">Replication Genotype File</span>, a tabix-indexed cleaned VCF file that contains genotypes from the replication experiment. The number and order of samples in the second file need not be the same as in the primary VCF input file. The option (--out-dup) will write the GQ an DP values of all genotypes to a file. In that file, the first three columns are the comparison result (C for concordance, D for discordance, followed by the primary genotype in sequencing), GQ, and DP, respectively. If the option (--out-dup) is not set, vQC will write a genotype comparison summary to the standard error.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_6">Sample-wise QC<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">vQC can also output several statistics for sample-wise quality control (--sample-qc), which include missing rate, heterozygous to non-reference homozygous ratio, Ti/Tv ratio of coding SNVs, genetic sex, mean GQ, mean DP, and the genotype concordance rate among replicated variants (if you have array data). Since it is most likely that the proportion of bad samples is small, while the proportion of bad variants could be large, these statistics are calculated after genotype-wise and variant-wise quality control. Ti/Tv was calculated for coding regions only so that it is comparable even between a whole exome and a whole genome sequencing. To identify coding variants, the <span class="style_2">Genotype File</span> should have been annotated for functional consequences, where the annotation is in the INFO field (--info-func). vQC looks for the phrase Missense, Synonymous, StopLoss, StopGain and Translation within this sub-field for coding variants.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">vQC infer sex from X and Y separately. It doesn't join the two chromosomes to make one inference because they may contradict to each other, which may be due to sample contamination or rare conditions. For sex inference from X, vQC requires an estimated genotyping error rate (--x-err-rate). Unless you use very gentle QC filters, the default value should be fine for most studies.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">If you have array data and use it in the quality control (--rep), vQC reports the genotype call rate and the concordance rate among the overlapping variants.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_6">--join-sample-qc<br /></p>
+                  <p class="paragraph_style_6"><br /></p>
+                  <p class="paragraph_style_5">If you perform QC for one chromosome at a time, which is recommended for a large study, you can aggregate the results and calculate the genome-wide overall statistics (--join-sample-qc). If you have calculated genetic relatedness between independent samples by KING, vQC can read the KING output (--king) and select the individuals to be removed in subsequent analyses. It first finds groups of people that are correlated by kinship. The number of people in each group could be more than two. From each group, vQC selects and keeps the person who has the lowest missing rate, in pedigree, and no sex error. The remaining people will be written to a file named &lt;prefix&gt;.rel_problem. For this option to work, you also need to set the (--spl) and (--prefix) option. In a subsequent analysis that requires independent individuals, you can remove the samples listed in this file (--rm-ind+=&lt;prefix&gt;.rel_problem). The default of the (--king) option removes second degree relatives or closer (--kin-cutoff), because the kinship calculation is not very reliable beyond this relatedness level. If you’d like to include related individuals in an association test, using individual weights to control for genetic relatedness, then you can choose to remove duplicates and monozygotic twins only (--kin-cutoff=0.35355).<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">Table: contents of --sample-qc or --join-sample-qc output. <br /></p>
+                  <p class="paragraph_style_28">------------------------------------------------------------------------------------------------<br /></p>
+                  <p class="paragraph_style_28">Column Header   Content                                                                        <br /></p>
+                  <p class="paragraph_style_28">------------------------------------------------------------------------------------------------<br /></p>
+                  <p class="paragraph_style_28">1      SeqID    Sequence ID                                                                    <br /></p>
+                  <p class="paragraph_style_28">2      Sex      Input sex from Sample File                                                     <br /></p>
+                  <p class="paragraph_style_28">3      ms       Missing genotypes on autosomal chromosomes                                     <br /></p>
+                  <p class="paragraph_style_28">4      non-ms   Non-missing genotypes on autosomal chromosomes                                 <br /></p>
+                  <p class="paragraph_style_28">5      Het      Heterozygous genotypes on autosomal chromosomes                                <br /></p>
+                  <p class="paragraph_style_28">6      AltHom   Homozygous ALT genotypes on autosomal chromosomes                              <br /></p>
+                  <p class="paragraph_style_28">7      HetRare  Heterozygous rare variants within exome on autosomal chromosomes   <br /></p>
+                  <p class="paragraph_style_28">8      HomRare  Homozygous rare variants within exome on autosomal chromosomes     <br /></p>
+                  <p class="paragraph_style_28">9      HetPers  Heterozygous personal variant within exome on autosomal chromosomes<br /></p>
+                  <p class="paragraph_style_28">10     HomPers  Homozygous personal variant within exome on autosomal chromosomes  <br /></p>
+                  <p class="paragraph_style_28">11     HetCode  Heterozygous coding variant within exome on autosomal chromosomes       <br /></p>
+                  <p class="paragraph_style_28">12     HomCode  Homozygous coding variant within exome on autosomal chromosomes         <br /></p>
+                  <p class="paragraph_style_28">13     Ti       Ti coding SNVs on autosomal chromosomes                                        <br /></p>
+                  <p class="paragraph_style_28">14     Tv       Tv coding SNVs on autosomal chromosomes                                        <br /></p>
+                  <p class="paragraph_style_28">15     MsRate   Missing rate on autosomal chromosomes                                          <br /></p>
+                  <p class="paragraph_style_28">16     Het/Hom  Het/Hom ratio on autosomal chromosomes                                         <br /></p>
+                  <p class="paragraph_style_28">17     HetRate  Heterozygous rate on autosomal chromosomes                                     <br /></p>
+                  <p class="paragraph_style_28">18     Ti/Tv    Ti/Tv ratio on autosomal chromosome coding regions                             <br /></p>
+                  <p class="paragraph_style_28">19     Y_ms     Missing on Y                                                                   <br /></p>
+                  <p class="paragraph_style_28">20     Y_call   Genotype calls on Y                                                            <br /></p>
+                  <p class="paragraph_style_28">21     Y_call%  Genotype call rate on Y                                                        <br /></p>
+                  <p class="paragraph_style_28">22     Y_sex    Genetic sex inferred from Y                                                    <br /></p>
+                  <p class="paragraph_style_28">23     X_call   Genotype calls on X                                                            <br /></p>
+                  <p class="paragraph_style_28">24     X_het    Heterozygous genotypes on X                                                    <br /></p>
+                  <p class="paragraph_style_28">25     X_LOD    LOD score for sex inference from X                                             <br /></p>
+                  <p class="paragraph_style_28">26     X_sex    Genetic sex inferred from X                                                    <br /></p>
+                  <p class="paragraph_style_28">27     RepGeno  Number of variants that the current VCF has a genotype call<br /></p>
+                  <p class="paragraph_style_28">28     RepBoth  Number of variants that both replication and this VCF have a genotype call     <br /></p>
+                  <p class="paragraph_style_28">29     RepConc  Number of concordant genotype calls                                            <br /></p>
+                  <p class="paragraph_style_28">30     RepGtp%  Genotype rate:    RepBoth/RepGeno  <br /></p>
+                  <p class="paragraph_style_28">31     RepCon%  Concordance rate: RepConc/RepBoth<br /></p>
+                  <p class="paragraph_style_28">32     numGQ    Number of non-missing GQ score                                                 <br /></p>
+                  <p class="paragraph_style_28">33     numDP    Number of non-missing DP score                                                 <br /></p>
+                  <p class="paragraph_style_28">34     meanGQ   mean GQ score                                                                  <br /></p>
+                  <p class="paragraph_style_28">35     meanDP   mean DP score                                                                  <br /></p>
+                  <p class="paragraph_style_28">------------------------------------------------------------------------------------------------<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_6">Overall quality<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">vQC assesses the overall quality by the number of rare variants per sample. Rare variant means MaxAF&lt;0.05 (--rv). This measure is more interpretable than singletons as the latter relies on the number of samples sequenced. To make this measure comparable between studies where the targeted regions may be different, rare variant are counted only within the minimum overlap regions across multiple exome capturing reagents including Agilent V4 V5 V6, NimbleGen V2 V3, VCRome V2, the well-covered (15x in 95% of the samples) regions in ExAC, and the gene regions in refSeq and Ensembl. vQC reports these numbers break down by case-control status, so that you can evaluate whether there's a batch effect between cases and controls and whether the cases and controls are comparable. These numbers are also reported for each individual so that it can be used for sample-wise QC too (--sample-qc).<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <div class="paragraph paragraph_style_3">3.5. vQS<span class="style"></span><div id="id16" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_3"><br /></p>
+                  <p class="paragraph_style_5">This program reads the VQSLOD scores output from “vQC --out-vqs” and determines the VQSLOD cutoff for SNV and InDel separately. The cutoff value is the lower fence for outliers from known variants by Kimber’s method. If this cutoff is beyond the lower bound (--lb) or upper bound (--ub) of the presumed range, the program will write an error message to the standard output, otherwise it will write a program option with the cutoff value for subsequent analyses.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <div class="paragraph paragraph_style_3">3.6. vINFO<span class="style"></span><div id="id17" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_3"><br /></p>
+                  <p class="paragraph_style_5">This program modifies a VCF file. It can remove specific INFO fields (--remove) or remove all INFO fields except the specific ones (--keep). A unique utility of this program is to restore the original POS,REF,ALT data after vAnnGene run (--restore). In functional consequence annotation by vAnnGene, these fields are modified to reflect the biological consequence of the variant. Therefore, some variants may be left-aligned, while others right-aligned. This is helpful for a correct deleteriousness annotations. Fortunately, vAnnGene also stores the original POS,REF,ALT data in the INFO field, so you can restore them by this program if you want.<br /></p>
+                  <p class="paragraph_style_14"><br /></p>
+                  <div class="paragraph paragraph_style_3">3.7. vPROV<span class="style"></span><div id="id18" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_3"><br /></p>
+                  <p class="paragraph_style_5">This program annotate PROVEAN for in-frame insertions or deletions by calling the PROVEAN program. It applies multithreading (--nt) for faster computation. <br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_3">4. Topics<br /></p>
+                  <div class="paragraph paragraph_style_3">4.1. Implemented quality Control<span class="style"></span><div id="id19" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_29"><br /></p>
+                  <p class="paragraph_style_30">Genotype-level QC:<br /></p>
+                  <ol>
+                    <li style="line-height: 22px; padding-left: 26px; text-indent: -26px; " class="full-width" value="1">
+                      <p style="text-indent: -26px; " class="paragraph_style_31"><span style="font-size: 18px; " class="Bullet">1)</span><span style="width: 6px; " class="inline-block"></span><span class="style_8">Remove bad genotypes</span>. Genotypes are deemed missing if the DP (read depth) or GQ (genotype quality conditional on the variant being true) or GP (genotype posterior probability) score is less than a threshold, which can be changed by a program option (--filt-DP) and (--filt-GQ) and (--filt-GP), respectively. Heterozygous genotypes with a low variant allele fraction (VAF) for the minor allele (could be REF or ALT) will also be removed (--filt-minorVAF). Alternatively,  you can apply the VAF filter on the ALT allele only (--filt-altVAF).<br /></p>
+                    </li>
+                    <li style="line-height: 22px; padding-left: 26px; text-indent: -26px; " class="full-width" value="2">
+                      <p style="text-indent: -26px; " class="paragraph_style_31"><span style="font-size: 18px; " class="Bullet">2)</span><span style="width: 6px; " class="inline-block"></span><span class="style_8">Correct genotypes based on the expected ploidy</span> of chrX, chrY, chrM for each individual (sex-dependent). It takes the pseodo-autosomal region (PAR) into account.<br /></p>
+                    </li>
+                  </ol>
+                  <p class="paragraph_style_30">Variant-level QC:<br /></p>
+                  <ol>
+                    <li style="line-height: 22px; padding-left: 26px; text-indent: -26px; " class="full-width" value="1">
+                      <p style="text-indent: -26px; " class="paragraph_style_31"><span style="font-size: 18px; " class="Bullet">1)</span><span style="width: 6px; " class="inline-block"></span><span class="style_8">Remove bad variants</span>. vQC filter variants by VQSLOD, the FILTER field, missing rate, missing rate discrepancy between cases and controls, Mendelian errors in pedigrees excluding <span class="style_9">de novo mutations</span>, number of <span class="style_4">de novo</span> mutations in different individuals, the probability of observing data give a low allele frequency, Hardy-Weinberg disequilibrium in independent controls and/or external samples, genotype discordances among duplicated samples, the percentage of samples covered by sequencing with a minimum depth, mean read depth, the proportion of heterozygous genotypes among non-missing haploidy individuals, and the ALT allele’s maximum variant allele fraction. If VQSLOD is not available, vQC automatically applies hard filtering by QD, MQ, FS, HaplotypeScore, MQRankSum, and ReadPosRankSum.<br /></p>
+                    </li>
+                    <li style="line-height: 22px; padding-left: 26px; text-indent: -26px; " class="full-width" value="2">
+                      <p style="text-indent: -26px; " class="paragraph_style_31"><span style="font-size: 18px; " class="Bullet">2)</span><span style="width: 6px; " class="inline-block"></span><span class="style_8">Quantitatively integrate quality of variant calls</span>. Quality control by variant filtering may not be sufficient because variants at the borderline of a filtering threshold may not be clean enough. To alleviate this problem, statistical analysis can integrate VQSLOD into a variant weight together with a deleteriousness score. Therefore, this method takes a balance between variant call quality and biological relevance.<br /></p>
+                    </li>
+                    <li style="line-height: 22px; padding-left: 26px; text-indent: -26px; " class="full-width" value="3">
+                      <p style="text-indent: -26px; " class="paragraph_style_31"><span style="font-size: 18px; " class="Bullet">3)</span><span style="width: 6px; " class="inline-block"></span><span class="style_8">Select regions or variant types</span>. vQC can filter variants by chromosomal region and variant type. A common usage of this feature is to select variants within the intersection of captured regions between cohorts, and/or exclude the regions that are too difficult for next-generation sequencing. You can also restrict the analysis to SNV only.<br /></p>
+                    </li>
+                    <li style="line-height: 22px; padding-left: 26px; text-indent: -26px; " class="full-width" value="4">
+                      <p style="text-indent: -26px; " class="paragraph_style_31"><span style="font-size: 18px; " class="Bullet">4)</span><span style="width: 6px; " class="inline-block"></span><span class="style_8">Wrong REF</span>. The annotation program vAnnGene checks whether the REF sequence matches with the reference genomic sequence. Variants that do not match will be reported.<br /></p>
+                    </li>
+                  </ol>
+                  <p class="paragraph_style_30">Sample-level QC:<br /></p>
+                  <ol>
+                    <li style="line-height: 22px; padding-left: 26px; text-indent: -26px; " class="full-width" value="1">
+                      <p style="text-indent: -26px; " class="paragraph_style_31"><span style="font-size: 18px; " class="Bullet">1)</span><span style="width: 6px; " class="inline-block"></span><span class="style_8">Sex<br /></span></p>
+                    </li>
+                    <li style="line-height: 22px; padding-left: 26px; text-indent: -26px; " class="full-width" value="2">
+                      <p style="text-indent: -26px; " class="paragraph_style_31"><span style="font-size: 18px; " class="Bullet">2)</span><span style="width: 6px; " class="inline-block"></span><span class="style_8">Het/non-ref-hom ratio</span><br /></p>
+                    </li>
+                    <li style="line-height: 22px; padding-left: 26px; text-indent: -26px; " class="full-width" value="3">
+                      <p style="text-indent: -26px; " class="paragraph_style_31"><span style="font-size: 18px; " class="Bullet">3)</span><span style="width: 6px; " class="inline-block"></span><span class="style_8">Ti/Tv ratio</span><br /></p>
+                    </li>
+                    <li style="line-height: 22px; padding-left: 26px; text-indent: -26px; " class="full-width" value="4">
+                      <p style="text-indent: -26px; " class="paragraph_style_31"><span style="font-size: 18px; " class="Bullet">4)</span><span style="width: 6px; " class="inline-block"></span><span class="style_8">Missing rate<br /></span></p>
+                    </li>
+                    <li style="line-height: 22px; padding-left: 26px; text-indent: -26px; " class="full-width" value="5">
+                      <p style="text-indent: -26px; " class="paragraph_style_31"><span style="font-size: 18px; " class="Bullet">5)</span><span style="width: 6px; " class="inline-block"></span><span class="style_8">Mean GQ and DP across all variants<br /></span></p>
+                    </li>
+                    <li style="line-height: 22px; padding-left: 26px; text-indent: -26px; " class="full-width" value="6">
+                      <p style="text-indent: -26px; " class="paragraph_style_32"><span style="font-size: 18px; " class="Bullet">6)</span><span style="width: 6px; " class="inline-block"></span><span class="style_8">pedigree structure errors (by the program KING)<br /></span></p>
+                    </li>
+                    <li style="line-height: 22px; padding-left: 26px; text-indent: -26px; " class="full-width" value="7">
+                      <p style="text-indent: -26px; " class="paragraph_style_32"><span style="font-size: 18px; " class="Bullet">7)</span><span style="width: 6px; " class="inline-block"></span><span class="style_8">cryptic relatedness among unrelated individuals (by the program KING)<br /></span></p>
+                    </li>
+                    <li style="line-height: 22px; padding-left: 26px; text-indent: -26px; " class="full-width" value="8">
+                      <p style="text-indent: -26px; " class="paragraph_style_32"><span style="font-size: 18px; " class="Bullet">8)</span><span style="width: 6px; " class="inline-block"></span><span class="style_8">population stratification (by the program PLINK)</span><br /></p>
+                    </li>
+                  </ol>
+                  <p class="paragraph_style_33"><br /></p>
+                  <p class="paragraph_style_33">slurm.all_steps does variant-level QC, then sample-level QC with passed variants, then variant-wise QC with passed samples. So that low-quality samples will not interfere with the variant-level quality filtering, and vice versa.<br /></p>
+                  <p class="paragraph_style_33">slurm.all_steps does not conduct QC on .bam files, such as contamination rates and sequencing yields. <br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <div class="paragraph paragraph_style_3">4.2. BayesDel score<span class="style"></span><div id="id20" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_33"><br /></p>
+                  <p class="paragraph_style_5">BayesDel is a deleteriousness meta-score. You can calculate BayesDel for a VCF file using the provided script slurm.annotate. The range of the score is from -1.29334 to 0.75731. The higher the score, the more likely the variant is pathogenic. There is a universal cutoff value (0.0692655 with MaxAF) that was obtained by maximizing sensitivity and specificity at the same time. There are also gene-specific cutoff values. Please see the BayesDel_GST file within the data folder for the cutoff. In that file the first column is gene symbol, the second is cutoff for BayesDel without MaxAF, the third is cutoff for BayesDel with MaxAF. It’s important to note that these cutoff values were designed for gene discovery research, not for clinical operations, where you may want to have a double-cutoff system, i.e., BayesDel&gt;cutoff1 is likely pathogenic, BayesDel&lt;cutoff2 is likely benign, while others are variants of uncertain significance.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <div class="paragraph paragraph_style_3">4.3. ClinVar annotation<span class="style"></span><div id="id21" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_33"><br /></p>
+                  <p class="paragraph_style_5">If a variant match with a VKS (variant of known significance), it will be labeled “(knClinSig=#.$)”, where # is '1' for pathogenic and '0' for benign. Unclassified missense variants that cause a different amino acid change than a known pathogenic mutation at the same position, that also have a BayesDel score ≥ the BayesDel score of the known pathogenic mutation, were classified as pathogenic. The opposite also applies to benign variants. Below is a list of potential annotations and their meanings.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_34">knClinSig=#.h        NMD/LoF variants in a gene known to be haplo-insufficient<br /></p>
+                  <p class="paragraph_style_34">knClinSig=#.r        NMD/LoF variants in a gene known to be recessive<br /></p>
+                  <p class="paragraph_style_34">knClinSig=#.a        Exact match at DNA level<br /></p>
+                  <p class="paragraph_style_34">knClinSig=#.b        Exact match at protein level<br /></p>
+                  <p class="paragraph_style_34"><br /></p>
+                  <p class="paragraph_style_34">When ClinVar has classified variants at the same AA position, but with different substitutions:<br /></p>
+                  <p class="paragraph_style_34">knClinSig=#.c        The query variant has BayesDel &lt;benign or  &gt;pathogenic ClinVar variants.<br /></p>
+                  <p class="paragraph_style_34">knClinSig=ambiguous  The query variant has BayesDel &lt;benign and &gt;pathogenic ClinVar variants.<br /></p>
+                  <p class="paragraph_style_34">knClinSig=uncertain  The query variant has BayesDel &gt;benign and &lt;pathogenic ClinVar variants.<br /></p>
+                  <p class="paragraph_style_34"><br /></p>
+                  <p class="paragraph_style_34">Splice-altering variants:<br /></p>
+                  <p class="paragraph_style_34">knClinSig=s0.b/s0.c  They are originally 0.b/0.c, but flagged with SpliceAlt. Therefore, they are not considered benign.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">The pipeline provides two sets of ClinVar database named ClinVar#star.gz and ClinVar#starExplore.gz, respectively. #, the number of stars, can be 0, 1, or 2. The former uses the original ClinVar classification; the latter is designed for gene discovery research, where conflicting variants were re-evaluated after removing underlying Uncertain Significance classification reports from consideration. This re-evaluation process, for example, moved <span class="style_4">CHEK2</span> c.1100delC from Conflicting (accessed on 2022-07-26) to Pathogenic/Likely Pathogenic. By default, slurm.all_steps annotate the former for secondary finding reporting and the latter for exome or genome-wide rare-variant association tests.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <div class="paragraph paragraph_style_3">4.4. Regulatory elements<span class="style"></span><div id="id22" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_33"><br /></p>
+                  <p class="paragraph_style_5">VICTOR has several databases for regulatory elements. <br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">Ensembl regulatory build motif feature database (ensembl_mf.bed.gz) contains transcription factor binding sites, enhancers, open chromatin regions, and promoters. This database does not have target gene information, so the annotation is restricted by the upstream (--up option of vAnnGene) and downstream (--dn option of vAnnGene) boundary. For example, a variant is annotated as “Upstream(REG:promoter)” if it overlap with ensembl_mf.bed.gz <span class="style_4">and</span> is within the upstream region defined by the (--up) option of vAnnGene. It will be annotated as “Intergenic” if it is beyond the upstream boundary even though it may overlap with ensembl_mf.bed.gz. The Ensembl regulatory build motif feature and other similar databases can be specified by the (--par) and (--cat-par) options of vAnnGene.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">Some other regulatory element databases contain target genes, such as RED (regulatory element database), JEME (Joint Effect of Multiple Enhancers), FOCS (FDR-corrected OLS with Cross-validation and Shrinkage), and PETModule (Predicting enhancer target by modules). In VICTOR, FOCS is divided into FOCS_E for enhancer and FOCS_P for promoter. JEME is divided into JEME_EL for Encode+Roadmap and JEME_FL for Fantom5; L stands for the LASSO network that is described by the original paper Nature Genetics 49(10):1428-1436, (2017). Annotation of these database is not restricted by the relative location of a variant to its target gene. That means, changing the (--up) and (--dn) option of vAnnGene will not affect their annotations. These databases are specified by the (--etg) option of vAnnGene. Here, etg is the abbreviation for Enhancer-Target Gene pairs. Annotation output of one or more databases would be (ETG:xxx), e.g., Upstream(ETG:FOCS_E&amp;FOCS_P).<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">Expression regulation is tissue specific. Some databases provide predictions by cell types or tissue types. VICTOR has the pre-computed PETModule predictions for 8 human cells: A549, Gm12878, Helas3, hEsc, IMR90, K562, MCF7, and SK-N-SH. The xxxGene_PETModule_human.gz file is created by merging these eight data. If you would like to use a specific cell or tissue-type ETG, please set the (--etg) option with one of the eight PETModule predictions or create your own, and you may also want to turn off the (--par) option. <br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">MicroRNA binding to 3‘UTR also regulates gene expression. VICTOR contains the Target Scan v7.2 predictions of microRNA binding sites. The vAnnGene option to request for annotation against this database is (--pas).<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <div class="paragraph paragraph_style_3">4.5. Polygenic risk score<span class="style"></span><div id="id23" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_33"><br /></p>
+                  <p class="paragraph_style_5">VICTOR's vAAA2 program can calculate a polygenic risk score (PRS) for each genotyped individual (--prs). This program reads a PRS model (summary statistics of each genetic variant for PRS calculation) from a <span class="style_2">PRS Variant File</span> and genotypes of each individual from a genotype file. Both files should be in VCF format. The genotype file should be a clean VCF (after removing low quality variants) and be tabix-indexed. The minimum requirements for the <span class="style_2">PRS Variant File</span> include the PRS_beta, PRS_allele, and PRS_phenotype fields in the INFO column. PRS_beta is the beta coefficient of the effect allele. PRS_allele is either ALT or REF, demonstrating whether the effect allele is ALT or REF. PRS_phenotype is the phenotype name of the PRS model. Sometimes it is necessary to calculate the relative risk of each individual over the general population (--prr). This calculation requires effect allele frequency in the population. This data can be stored in the INFO column with your choice of field name (--af). Note that the allele frequency field refers to the ALT allele, not the effect allele. Alternatively, you can directly specify the effect allele frequency in a PRS_freq field. It is always good to have both the PRS_freq (obtained from the original genome-wide association study) and the local population frequency data. When they both exist, VICTOR will compare their values; if the variant is a CG or AT single nucleotide polymorphism and the allele frequencies are on different sides of 0.5, VICTOR will emit a warning message for potential strand problems. You can also use the allele frequency calculated from the genotype file (--use-paf). However, this strategy requires unselected individuals for genotyping.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">Example of a <span class="style_2">PRS Variant File</span>:<br /></p>
+                  <p class="paragraph_style_26">##fileformat=VCFv4.1<br /></p>
+                  <p class="paragraph_style_26">#CHROM POS      ID         REF ALT QUAL FILTER INFO<br /></p>
+                  <p class="paragraph_style_26">11     69379161 rs75915166 C   A   .    .      PRS_beta=0.02362;PRS_allele=ALT;PRS_phenotype=BrCa;UtahAF=0.0696721<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">The VICTOR package provides several precompiled <span class="style_2">PRS Variant Files</span>: PRS.BrCa77.vcf, PRS.BrCa313.vcf, PRS.CRC30.vcf, PRS.CRC78.vcf, PRS.OvCa15.vcf, PRS.OvCa30.vcf, PRS.PanCa18.vcf, PRS.PanCa26.vcf. If you use these files. Below are examples of their usage.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">Example A (recommended):<br /></p>
+                  <p class="paragraph_style_27">vAAA2 PRS.BrCa77.vcf --gtp=My.vcf.gz --spl=My.samples --write=dosage --prr --af=UtahAF &gt; My.prr.txt<br /></p>
+                  <p class="paragraph_style_5">This command computes polygenic relative risk for breast cancer using 77 SNPs calibrated on UtahAF allele frequency. The output file has 4 columns: Sequence ID, affection status, PRR score, and individual weight.  <br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">Example B:<br /></p>
+                  <p class="paragraph_style_27">vAAA2 PRS.BrCa77.vcf --gtp=My.vcf.gz --spl=My.samples --write=dosage --prs &gt; My.prs.txt <br /></p>
+                  <p class="paragraph_style_5">This command computes polygenic risk score for breast cancer using 77 SNPs without calibration on allele frequency in the general population. The output file has 4 columns: Sequence ID, affection status, PRS score, and individual weight. <br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">Example C:<br /></p>
+                  <p class="paragraph_style_27">vAAA2 PRS.BrCa77.vcf --gtp=My.vcf.gz --spl=My.samples --prs --logistic | vFIN --group=PRS_phenotype<br /></p>
+                  <p class="paragraph_style_5">This command computes polygenic risk score for breast cancer using 77 SNPs without calibration on allele frequency in the general population. It then performs a Firth-penalized logistic regression on the PRS score.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">My.vcf.gz can be generated from a genome-wide imputation. Please see the following section. <br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <div class="paragraph paragraph_style_3">4.6. QC of VCFs from imputation services<span class="style"></span><div id="id24" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">VICTOR provides a script to do quality control and merge VCFs created by an imputation service such as the Sanger Imputation Service. Once you downloaded the VCFs from the server, you can do the following commands. The first command will create a slurm script in your current directory. The second will submit a job, which will run for 10 hours. Before you run the command, please change “your_Sample_File”, “your_account”, “/path/to/VICTOR”, and “module load fenglab”. The last one is how I set up PATH for VICTOR. Please change it according to your system.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_35">cat /path/to/VICTOR/script_template/slurm.impute2mrg |\<br /></p>
+                  <p class="paragraph_style_35">sed 's;OUT:-MY_PREFIX;OUT:-VICTOR;' |\<br /></p>
+                  <p class="paragraph_style_35">sed 's/MY_EMAIL/your_email_address/' |\<br /></p>
+                  <p class="paragraph_style_35">sed 's/MY_ACCOUNT/your_account/' |\<br /></p>
+                  <p class="paragraph_style_35">sed 's/^#   module load fenglab/    module load fenglab/' |\<br /></p>
+                  <p class="paragraph_style_36">sed &quot;s;export SCRATCH_LOCAL= ;export SCRATCH_LOCAL=/scratch/local ;&quot; |\<br /></p>
+                  <p class="paragraph_style_35">sed &quot;s/^STEP_S=no /STEP_S=yes/&quot; |\<br /></p>
+                  <p class="paragraph_style_35">sed &quot;s/^STEP_V=no /STEP_V=yes/&quot; |\<br /></p>
+                  <p class="paragraph_style_35">sed &quot;s/^STEP_P=yes/STEP_P=no /&quot; |\<br /></p>
+                  <p class="paragraph_style_35">sed 's;^export SPL= ;export SPL=your_Sample_File ;' &gt; slurm.impute2mrg<br /></p>
+                  <p class="paragraph_style_35"><br /></p>
+                  <p class="paragraph_style_35">victor.sbatch --array=100 slurm.impute2mrg<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">The above will generate VICTOR.imp.qc.vcf.gz. You can calculate PRS by <span class="style_10">vAAA2 --gtp=VICTOR.imp.qc.vcf.gz</span>.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <div class="paragraph paragraph_style_3">4.7. Common errors<span class="style"></span><div id="id25" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_33"><br /></p>
+                  <p class="paragraph_style_27">1. “Error: cannot determine Reference.” or “Error: cannot find data folder ./”<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <p class="paragraph_style_5">VICTOR supports multiple genomic builds (or Reference). This error happens when VICTOR doesn’t know which Reference to use. There are several ways to inform VICTOR programs about the Reference.<br /></p>
+                  <p class="paragraph_style_5"><br /></p>
+                  <ol>
+                    <li style="line-height: 24px; padding-left: 26px; text-indent: -26px; " class="full-width" value="1">
+                      <p style="text-indent: -26px; " class="paragraph_style_17"><span style="font-size: 18px; " class="Bullet">1)</span><span style="width: 6px; " class="inline-block"></span>The best way is to put your work folder under a directory that is named by a Reference, for example, /home/me/human_GRCh37/collaborator1/project1/analysis1/. VICTOR will infer the Reference as GRCh37 by the fullpath name of the current folder. Be careful, the fullpath cannot contain two different genome names such as GRCh38_uplifted_from_GRCh37 because the programs are not smart enough to understand this.<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 26px; text-indent: -26px; " class="full-width" value="2">
+                      <p style="text-indent: -26px; " class="paragraph_style_17"><span style="font-size: 18px; " class="Bullet">2)</span><span style="width: 6px; " class="inline-block"></span>Add the --genome option in par.txt in the current folder. For example, --genome=GRCh38<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 26px; text-indent: -26px; " class="full-width" value="3">
+                      <p style="text-indent: -26px; " class="paragraph_style_17"><span style="font-size: 18px; " class="Bullet">3)</span><span style="width: 6px; " class="inline-block"></span>Set environment variable VICTOR_GENOME. For example, export VICTOR_GENOME=GRCh38<br /></p>
+                    </li>
+                    <li style="line-height: 24px; padding-left: 26px; text-indent: -26px; " class="full-width" value="4">
+                      <p style="text-indent: -26px; " class="paragraph_style_17"><span style="font-size: 18px; " class="Bullet">4)</span><span style="width: 6px; " class="inline-block"></span>If you use the slurm.annotate and slurm.all_steps scripts, they can detect Reference from the meta data of the input VCF file. Make sure your VCF file does not contain multiple reference names in the meta data.<br /></p>
+                    </li>
+                  </ol>
+                  <p class="paragraph_style_5"><br /></p>
+                  <ol>
+                    <li style="line-height: 24px; padding-left: 24px; text-indent: -24px; " class="full-width" value="2">
+                      <p style="text-indent: -24px; " class="paragraph_style_37"><span style="font-size: 18px; " class="Bullet">2.</span><span style="width: 6px; " class="inline-block"></span>Error: SLURM_ARRAY_TASK_ID not defined<br /></p>
+                    </li>
+                  </ol>
+                  <p class="paragraph_style_22"><br /></p>
+                  <p class="paragraph_style_22">It happens when you run the slurm.all_steps script directly rather than submitting a job. Please read inside the script; there is a section that talks about how to run it directly.<br /></p>
+                  <p class="paragraph_style_22"><br /></p>
+                  <div class="paragraph paragraph_style_3">4.8. FAQs<span class="style"></span><div id="id26" style="height: 24px; position: relative; width: 160px; " class="style_SkipStroke_2 shape-with-text inline-block"><div class="text-content style_External_160_24" style="padding: 0px; "><div class="style_1"><p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_4"><a title="#" href="#">[Back to top]</a></p></div></div></div><span class="tinyText"> </span><span class="style"></span><br /></div>
+                  <p class="paragraph_style_33"><br /></p>
+                  <ol>
+                    <li style="line-height: 19px; padding-left: 24px; text-indent: -24px; " class="full-width" value="1">
+                      <p style="padding-top: 13px; text-indent: -24px; " class="paragraph_style_38"><span style="font-size: 16px; " class="Bullet">1.</span><span style="width: 8px; " class="inline-block"></span>Does VICTOR require external data?<br /></p>
+                    </li>
+                    <li style="line-height: 19px; padding-left: 24px; text-indent: -24px; " class="full-width">
+                      <p style="text-indent: -24px; " class="paragraph_style_39"><span style="font-size: 0px; position: relative; top: -10px; " class="Bullet"></span><span style="width: 24px; " class="inline-block"></span>No. Necessary data are already included.<br /></p>
+                    </li>
+                    <li style="line-height: 19px; padding-left: 24px; text-indent: -24px; " class="full-width" value="2">
+                      <p style="padding-top: 13px; text-indent: -24px; " class="paragraph_style_38"><span style="font-size: 16px; " class="Bullet">2.</span><span style="width: 8px; " class="inline-block"></span>Does VICTOR require third-party programs?<br /></p>
+                    </li>
+                    <li style="line-height: 19px; padding-left: 24px; text-indent: -24px; " class="full-width">
+                      <p style="text-indent: -24px; " class="paragraph_style_39"><span style="font-size: 0px; position: relative; top: -10px; " class="Bullet"></span><span style="width: 24px; " class="inline-block"></span>Yes, tabix (<a title="https://github.com/samtools/tabix" href="https://github.com/samtools/tabix">https://github.com/samtools/tabix</a>). There may be other required programs depending on your analysis. For example, GNU parallel may be needed for parallel computation. Please see the INSTALL page for more information.<br /></p>
+                    </li>
+                    <li style="line-height: 19px; padding-left: 24px; text-indent: -24px; " class="full-width" value="3">
+                      <p style="padding-top: 13px; text-indent: -24px; " class="paragraph_style_38"><span style="font-size: 16px; " class="Bullet">3.</span><span style="width: 8px; " class="inline-block"></span>Can I use my own gene database rather than the provided Ensembl or RefSeq database?<br /></p>
+                    </li>
+                    <li style="line-height: 19px; padding-left: 24px; text-indent: -24px; " class="full-width">
+                      <p style="text-indent: -24px; " class="paragraph_style_39"><span style="font-size: 0px; position: relative; top: -10px; " class="Bullet"></span><span style="width: 24px; " class="inline-block"></span>You can build your own database file and use a program option or a Configure File (recommended) to specify the database to be used. Configure File is preferred because all program runs within the same folder will read the same Configure File and use the same parameters. Please see <a class="class10" title="../vanner/Manual.html" href="../vanner/Manual.html">VANNER's Manual</a> for the format of a gene database file, and <a class="class11" title="" href="">VICTOR’s Manual</a> for the format of the Configure File.<br /></p>
+                    </li>
+                    <li style="line-height: 19px; padding-left: 24px; text-indent: -24px; " class="full-width" value="4">
+                      <p style="padding-top: 13px; text-indent: -24px; " class="paragraph_style_38"><span style="font-size: 16px; " class="Bullet">4.</span><span style="width: 8px; " class="inline-block"></span>Can I use my own annotation pipeline to do variant annotation?<br /></p>
+                    </li>
+                    <li style="line-height: 19px; padding-left: 24px; text-indent: -24px; " class="full-width">
+                      <p style="text-indent: -24px; " class="paragraph_style_39"><span style="font-size: 0px; position: relative; top: -10px; " class="Bullet"></span><span style="width: 24px; " class="inline-block"></span>Yes, you need to provide an annotated variant file with the following columns: #CHROM POS ID REF ALT QUAL FILTER INFO Func_Gene Func_Type Func_Detail. You can see that the first 8 columns are the same as the original VCF file. The last 3 columns contain annotation: Func_Gene is gene symbol, Func_Type is functional consequence type, Func_Detail is HGVS nomenclature. Rows should be sorted by Func_Gene. The corresponding files created by VICTOR is xxx.ann.del.gz.<br /></p>
+                    </li>
+                    <li style="line-height: 19px; padding-left: 24px; text-indent: -24px; " class="full-width" value="5">
+                      <p style="padding-top: 13px; text-indent: -24px; " class="paragraph_style_38"><span style="font-size: 16px; " class="Bullet">5.</span><span style="width: 8px; " class="inline-block"></span>How do I annotate allele frequency in a particular population?<br /></p>
+                    </li>
+                    <li style="line-height: 19px; padding-left: 24px; text-indent: -24px; " class="full-width">
+                      <p style="text-indent: -24px; " class="paragraph_style_39"><span style="font-size: 0px; position: relative; top: -10px; " class="Bullet"></span><span style="width: 24px; " class="inline-block"></span>The pipeline annotates AF-non_cancer-afr, AF-non_cancer-amr, AF-non_cancer-eas, AF-non_cancer-nfe, AF-non_cancer-sas, and AF-non_cancer-mid. If you are interested in other populations, you can build your own Annotation File (the header should not be MaxAF), then use the AN1, AN2, .., or AN5 parameter in slurm.all_steps to annotate that file. Please also set the --af parameter in a local Configure File (par.txt), so that all programs know that there are additional allele frequency data and will take them into account in the analyses.<br /></p>
+                    </li>
+                    <li style="line-height: 19px; padding-left: 24px; text-indent: -24px; " class="full-width" value="6">
+                      <p style="padding-top: 13px; text-indent: -24px; " class="paragraph_style_38"><span style="font-size: 16px; " class="Bullet">6.</span><span style="width: 8px; " class="inline-block"></span>How do I annotate deleteriousness scores such as PolyPhen, SIFT, CADD, REVEL, etc.?<br /></p>
+                    </li>
+                    <li style="line-height: 19px; padding-left: 24px; text-indent: -24px; " class="full-width">
+                      <p style="text-indent: -24px; " class="paragraph_style_39"><span style="font-size: 0px; position: relative; top: -10px; " class="Bullet"></span><span style="width: 24px; " class="inline-block"></span>The package contains a BayesDel scores for all possible SNVs in the entire genome, which were calculated by combining individual deleteriousness scores. If you are interested in a particular deleteriousness score, please download the <a class="class12" title="https://drive.google.com/open?id=0B517RSoQOYT_Q0t5VEotNEg2QVU" href="https://drive.google.com/open?id=0B517RSoQOYT_Q0t5VEotNEg2QVU">nsfp33a.gz</a> and <a class="class13" title="https://drive.google.com/open?id=0B517RSoQOYT_b1RVWDkxalVpR28" href="https://drive.google.com/open?id=0B517RSoQOYT_b1RVWDkxalVpR28">nsfp33a.gz.tbi</a> files, save them in /path/to/VICTOR/data/, and then annotate using the AN1, AN2, .., or AN5 parameter in slurm.all_steps. The provided nsfp33a.gz was last updated on 2017-07-26. <br /></p>
+                    </li>
+                  </ol>
+                </div>
+                <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
+              </div>
+            </div>
+            <div class="com-apple-iweb-widget-HTMLRegion" id="widget1" style="height: 1px; left: 793px; opacity: 1.00; position: absolute; top: -38px; width: 1px; z-index: 1; ">
+              <script type="text/javascript"><!--//--><![CDATA[//><!--
+    var widget1_htmlMarkupURL = ".//Manual_files/widget1_markup.html";
+//--><!]]></script>
+              <div id="widget1-htmlRegion" class="html_region_widget"></div>
+            </div>
+            <script type="text/javascript"><!--//--><![CDATA[//><!--
+new Paste('widget1', 'Scripts/Widgets/HTMLRegion', 'Scripts/Widgets/SharedResources', '.', {"emptyLook": false});
+//--><!]]></script>
+            <div id="id28" style="height: 280px; left: 531px; position: absolute; top: 3px; width: 230px; z-index: 1; " class="style_SkipStroke_1 shape-with-text">
+              <div class="text-content graphic_textbox_layout_style_default_External_230_280" style="padding: 0px; ">
+                <div class="graphic_textbox_layout_style_default">
+                  <p style="padding-top: 0pt; " class="paragraph_style">Topics<br /></p>
+                  <ol>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class14" title="#id19" href="#id19">Quality control</a><br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class15" title="#id20" href="#id20">BayesDel score</a><br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class16" title="#id21" href="#id21">ClinVar annotation</a><br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class17" title="#id22" href="#id22">Regulatory elements</a><br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class18" title="#id23" href="#id23">Polygenic risk score</a><br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class19" title="#id24" href="#id24">QC of imputed VCFs</a><br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class20" title="#id25" href="#id25">Common errors</a><br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="padding-bottom: 0pt; text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class21" title="#id26" href="#id26">FAQs</a></p>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            
+
+
+            <div id="id29" style="height: 280px; left: 360px; position: absolute; top: 3px; width: 171px; z-index: 1; " class="style_SkipStroke_1 shape-with-text">
+              <div class="text-content graphic_textbox_layout_style_default_External_171_280" style="padding: 0px; ">
+                <div class="graphic_textbox_layout_style_default">
+                  <p style="padding-top: 0pt; " class="paragraph_style">Programs<br /></p>
+                  <ol>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class22" title="#id12" href="#id12">vConvertVCF</a><br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class23" title="#id13" href="#id13">vConvertPed</a><br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class24" title="#id14" href="#id14">vSPLIT</a><br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class25" title="#id15" href="#id15">vQC</a><br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class26" title="#id16" href="#id16">vQS</a><br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class27" title="#id17" href="#id17">vINFO</a><br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class28" title="#id18" href="#id18">vPROV</a><br /></p>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            
+
+
+            <div id="id30" style="height: 280px; left: 205px; position: absolute; top: 3px; width: 155px; z-index: 1; " class="style_SkipStroke_1 shape-with-text">
+              <div class="text-content graphic_textbox_layout_style_default_External_155_280" style="padding: 0px; ">
+                <div class="graphic_textbox_layout_style_default">
+                  <p style="padding-top: 0pt; " class="paragraph_style">Scripts<br /></p>
+                  <p class="paragraph_style_40">- <a class="class29" title="#id9" href="#id9">slurm.all_steps</a><br /></p>
+                  <ol>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class30" title="#id10" href="#id10">slurm.annotate</a><br /></p>
+                    </li>
+                    <li style="line-height: 21px; padding-left: 11px; text-indent: -11px; " class="full-width">
+                      <p style="text-indent: -11px; " class="paragraph_style_1"><span style="font-size: 16px; " class="Bullet">-</span><span style="width: 5px; " class="inline-block"></span><a class="class31" title="#id11" href="#id11">victor.sbatch</a><br /></p>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div style="height: 24572px; line-height: 24572px; " class="spacer"> </div>
+          </div>
+          <div style="height: 0px; line-height: 0px; margin-left: 0px; position: relative; width: 1136px; z-index: 15; " id="footer_layer">
+            <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--code_set--></body>
+</html>
+
+

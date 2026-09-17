@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <id>urn:iweb:004EEA4B-5D59-4C80-BEF7-E06DB500A065</id>
+ <title>Page list Atom feed</title>
+ <updated>2022-12-09T08:58:49-07:00</updated>
+ <link rel="self" href="feed.xml"/>
+ <generator>iWeb</generator>
+ <author>
+  <name>iWeb</name>
+ </author>
+ <entry>
+  <id>urn:iweb:E2979BED-669E-427B-9D8A-7E1B379FBC08</id>
+  <title>Manual</title>
+  <title xmlns="urn:iweb:">Manual</title>
+  <in-navbar xmlns="urn:iweb:">E2979BED-669E-427B-9D8A-7E1B379FBC08</in-navbar>
+  <link rel="alternate" href="Manual.html"/>
+  <updated>2022-12-09T08:58:49.001-07:00</updated>
+  <content>Manual</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:70F579D2-D84A-40A5-B78B-6F94A5D4346D</id>
+  <title>Install</title>
+  <title xmlns="urn:iweb:">Install</title>
+  <in-navbar xmlns="urn:iweb:">70F579D2-D84A-40A5-B78B-6F94A5D4346D</in-navbar>
+  <link rel="alternate" href="Install.html"/>
+  <updated>2022-12-09T08:58:49.002-07:00</updated>
+  <content>Install</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:510E937C-E283-4CA8-B043-5BF93DA10F0D</id>
+  <title>History</title>
+  <title xmlns="urn:iweb:">History</title>
+  <in-navbar xmlns="urn:iweb:">510E937C-E283-4CA8-B043-5BF93DA10F0D</in-navbar>
+  <link rel="alternate" href="History.html"/>
+  <updated>2022-12-09T08:58:49.003-07:00</updated>
+  <content>History</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:A6CA11BA-159C-4D62-9A31-F77CAD43EA53</id>
+  <title>Contact</title>
+  <title xmlns="urn:iweb:">Contact</title>
+  <in-navbar xmlns="urn:iweb:">A6CA11BA-159C-4D62-9A31-F77CAD43EA53</in-navbar>
+  <link rel="alternate" href="Contact.html"/>
+  <updated>2022-12-09T08:58:49.004-07:00</updated>
+  <content>Contact</content>
+ </entry>
+</feed>
